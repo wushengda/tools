@@ -1,0 +1,2290 @@
+===========2016/8/11 21:33:03===========
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\ffmpeg.exe" -i "D:\Main Comp.avi" -vn -sn -v 0 -c:a pcm_s16le -f wav pipe:|"D:\小丸工具箱v194\小丸工具箱rev194\tools\neroAacEnc.exe" -ignorelength -lc -br 128000 -if - -of "D:\Main Comp_atemp.mp4"
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\x264_64-8bit.exe" --crf 23.5 --demuxer auto --threads auto --preset 8  -I 250 -r 4 -b 3 --me umh -i 1 --scenecut 60 -f 1:1 --qcomp 0.5 --psy-rd 0.3:0 --aq-mode 2 --aq-strength 0.8 --vf resize:480,360,,,,lanczos -o "D:\Main Comp_vtemp.mp4" "D:\Main Comp.avi"
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\mp4box.exe" -add "D:\Main Comp_vtemp.mp4#trackID=1:name=" -add "D:\Main Comp_atemp.mp4#trackID=1:name=" -new "D:\Main Comp_x264.mp4"
+
+del "D:\Main Comp_vtemp.mp4"
+del "D:\Main Comp_atemp.mp4"
+
+echo ===== one file is completed! =====
+
+
+===========2016/8/11 21:34:05===========
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\ffmpeg.exe" -i "D:\Main Comp.avi" -vn -sn -v 0 -c:a pcm_s16le -f wav pipe:  | "D:\小丸工具箱v194\小丸工具箱rev194\tools\neroAacEnc.exe" -ignorelength -lc -br 128000 -if - -of "D:\Main Comp_atemp.mp4" 
+ERROR: could not parse WAV file
+*************************************************************
+*                                                           *
+*  Nero AAC Encoder                                         *
+*  Copyright 2009 Nero AG                                   *
+*  All Rights Reserved Worldwide                            *
+*                                                           *
+*  Package build date: Feb 18 2010                          *
+*  Package version:    1.5.4.0                              *
+*                                                           *
+*  See -help for a complete list of available parameters.   *
+*                                                           *
+*************************************************************
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\x264_64-8bit.exe" --crf 23.5 --demuxer auto --threads auto --preset 8  -I 250 -r 4 -b 3 --me umh -i 1 --scenecut 60 -f 1:1 --qcomp 0.5 --psy-rd 0.3:0 --aq-mode 2 --aq-strength 0.8 --vf resize:480,360,,,,lanczos -o "D:\Main Comp_vtemp.mp4" "D:\Main Comp.avi" 
+[info]: indexing input file [0.3%]  
+[info]: indexing input file [1.4%]  
+[info]: indexing input file [2.6%]  
+[info]: indexing input file [3.4%]  
+[info]: indexing input file [4.9%]  
+[info]: indexing input file [5.7%]  
+[info]: indexing input file [6.3%]  
+[info]: indexing input file [7.1%]  
+[info]: indexing input file [7.7%]  
+[info]: indexing input file [8.9%]  
+[info]: indexing input file [10.3%]  
+[info]: indexing input file [11.4%]  
+[info]: indexing input file [12.3%]  
+[info]: indexing input file [13.4%]  
+[info]: indexing input file [14.6%]  
+[info]: indexing input file [15.7%]  
+[info]: indexing input file [16.9%]  
+[info]: indexing input file [18.0%]  
+[info]: indexing input file [19.1%]  
+[info]: indexing input file [20.3%]  
+[info]: indexing input file [21.7%]  
+[info]: indexing input file [22.9%]  
+[info]: indexing input file [23.4%]  
+[info]: indexing input file [24.6%]  
+[info]: indexing input file [26.0%]  
+[info]: indexing input file [26.9%]  
+[info]: indexing input file [28.0%]  
+[info]: indexing input file [28.9%]  
+[info]: indexing input file [29.1%]  
+[info]: indexing input file [30.0%]  
+[info]: indexing input file [31.1%]  
+[info]: indexing input file [32.6%]  
+[info]: indexing input file [33.7%]  
+[info]: indexing input file [34.9%]  
+[info]: indexing input file [37.7%]  
+[info]: indexing input file [42.9%]  
+[info]: indexing input file [44.0%]  
+[info]: indexing input file [45.1%]  
+[info]: indexing input file [46.6%]  
+[info]: indexing input file [47.7%]  
+[info]: indexing input file [48.3%]  
+[info]: indexing input file [48.6%]  
+[info]: indexing input file [49.4%]  
+[info]: indexing input file [50.9%]  
+[info]: indexing input file [52.0%]  
+[info]: indexing input file [53.4%]  
+[info]: indexing input file [54.6%]  
+[info]: indexing input file [55.4%]  
+[info]: indexing input file [56.3%]  
+[info]: indexing input file [56.9%]  
+[info]: indexing input file [57.7%]  
+[info]: indexing input file [58.6%]  
+[info]: indexing input file [59.7%]  
+[info]: indexing input file [60.9%]  
+[info]: indexing input file [62.0%]  
+[info]: indexing input file [63.1%]  
+[info]: indexing input file [64.3%]  
+[info]: indexing input file [65.4%]  
+[info]: indexing input file [66.0%]  
+[info]: indexing input file [66.3%]  
+[info]: indexing input file [67.1%]  
+[info]: indexing input file [67.7%]  
+[info]: indexing input file [68.6%]  
+[info]: indexing input file [69.7%]  
+[info]: indexing input file [70.9%]  
+[info]: indexing input file [72.0%]  
+[info]: indexing input file [73.1%]  
+[info]: indexing input file [74.0%]  
+[info]: indexing input file [75.4%]  
+[info]: indexing input file [76.0%]  
+[info]: indexing input file [76.3%]  
+[info]: indexing input file [77.1%]  
+[info]: indexing input file [78.3%]  
+[info]: indexing input file [79.7%]  
+[info]: indexing input file [80.3%]  
+[info]: indexing input file [80.9%]  
+[info]: indexing input file [81.4%]  
+[info]: indexing input file [82.6%]  
+[info]: indexing input file [84.0%]  
+[info]: indexing input file [85.1%]  
+[info]: indexing input file [86.3%]  
+[info]: indexing input file [87.4%]  
+[info]: indexing input file [88.9%]  
+[info]: indexing input file [90.3%]  
+[info]: indexing input file [91.4%]  
+[info]: indexing input file [92.3%]  
+[info]: indexing input file [93.4%]  
+[info]: indexing input file [94.6%]  
+[info]: indexing input file [95.4%]  
+[info]: indexing input file [96.3%]  
+[info]: indexing input file [97.4%]  
+[info]: indexing input file [98.6%]  
+[info]: indexing input file [99.7%]  
+                                            
+ffms [info]: 
+ Format    : avi
+ Codec     : rawvideo
+ PixFmt    : bgr24
+ Framerate : 25/1
+ Timebase  : 1000/25000
+ Duration  : 0:00:14
+ffms [warning]: recommend using --demuxer lavf with rawvideoffms [info]: 1920x1080p 0:1 @ 25/1 fps (vfr)
+ffms [info]: color matrix: bt709
+resize [info]: resizing to 480x360
+resize [warning]: converting from bgr24 to yuv420p
+x264 [info]: using SAR=4/3
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+x264 [info]: AVC Encoder x264 core 148 r2597+52 4ed4a81 xiaowan [8-bit@all X86_64]
+x264 [info]: profile: High, level: 2.1, subsampling: 4:2:0, bit-depth: 8-bit
+x264 [info]: cabac=1 ref=4 deblock=1:1:1 analyse=0x3:0x133 me=umh subme=10 psy=1 fade_compensate=0.00 psy_rd=0.30:0.00 mixed_ref=1 me_range=24 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=11 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 fgo=0 bframes=3 b_pyramid=2 b_adapt=2 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=1 scenecut=60 intra_refresh=0 rc_lookahead=60 rc=crf mbtree=1 crf=23.5000 qcomp=0.50 qpmin=0:0:0 qpmax=69:69:69 qpstep=4 ip_ratio=1.40 aq=2:0.80 aq-sensitivity=10.00 aq-factor=1.00:1.00:1.00 aq2=0 aq3=0
+x264 [info]: started at Thu Aug 11 21:33:36 2016
+                                                                                                                       
+x264 [info]: frame I:2     Avg QP:23.98  size:  9174
+x264 [info]: frame P:99    Avg QP:26.32  size:  3481
+x264 [info]: frame B:249   Avg QP:28.79  size:  1011
+x264 [info]: consecutive B-frames:  2.3%  2.9% 17.1% 77.7%
+x264 [info]: mb I  I16..4: 51.4% 36.8% 11.8%
+x264 [info]: mb P  I16..4:  9.8%  9.3%  1.5%  P16..4: 24.4%  4.4%  3.9%  0.6%  0.2%    skip:45.9%
+x264 [info]: mb B  I16..4:  0.1%  1.1%  0.1%  B16..8: 12.4%  3.6%  1.2%  direct: 2.1%  skip:79.3%  L0:24.2% L1:49.2% BI:26.6%
+x264 [info]: 8x8 transform intra:49.4% inter:69.0%
+x264 [info]: direct mvs  spatial:97.6% temporal:2.4%
+x264 [info]: coded y,uvDC,uvAC intra: 43.6% 38.9% 16.3% inter: 7.8% 5.5% 1.1%
+x264 [info]: i16 v,h,dc,p: 11% 26%  5% 58%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 18% 12%  5%  8%  7% 12%  7% 15%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 17% 14%  5%  9%  8% 12%  7% 12%
+x264 [info]: i8c dc,h,v,p: 21% 28% 13% 38%
+x264 [info]: Weighted P-Frames: Y:98.0% UV:12.1%
+x264 [info]: ref P L0: 63.1% 11.2% 16.8%  6.4%  1.8%  0.6%
+x264 [info]: ref B L0: 93.1%  4.9%  2.0%
+x264 [info]: ref B L1: 98.6%  1.4%
+x264 [info]: kb/s:351.19
+                                                        
+encoded 350 frames, 13.02 fps, 351.68 kb/s, 601.02 KB
+x264 [info]: ended at Thu Aug 11 21:34:03 2016
+x264 [info]: encoding duration 0:00:27
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\mp4box.exe" -add "D:\Main Comp_vtemp.mp4#trackID=1:name=" -add "D:\Main Comp_atemp.mp4#trackID=1:name=" -new "D:\Main Comp_x264.mp4" 
+IsoMedia import Main Comp_vtemp.mp4 - track ID 1 - Video (size 480 x 360)
+Importing ISO File: |                    | (01/100)
+Importing ISO File: |                    | (02/100)
+Importing ISO File: |                    | (03/100)
+Importing ISO File: |                    | (04/100)
+Importing ISO File: |=                   | (05/100)
+Importing ISO File: |=                   | (06/100)
+Importing ISO File: |=                   | (07/100)
+Importing ISO File: |=                   | (08/100)
+Importing ISO File: |=                   | (09/100)
+Importing ISO File: |==                  | (10/100)
+Importing ISO File: |==                  | (11/100)
+Importing ISO File: |==                  | (12/100)
+Importing ISO File: |==                  | (13/100)
+Importing ISO File: |==                  | (14/100)
+Importing ISO File: |===                 | (15/100)
+Importing ISO File: |===                 | (16/100)
+Importing ISO File: |===                 | (17/100)
+Importing ISO File: |===                 | (18/100)
+Importing ISO File: |===                 | (19/100)
+Importing ISO File: |====                | (20/100)
+Importing ISO File: |====                | (21/100)
+Importing ISO File: |====                | (22/100)
+Importing ISO File: |====                | (23/100)
+Importing ISO File: |====                | (24/100)
+Importing ISO File: |=====               | (25/100)
+Importing ISO File: |=====               | (26/100)
+Importing ISO File: |=====               | (27/100)
+Importing ISO File: |=====               | (28/100)
+Importing ISO File: |=====               | (29/100)
+Importing ISO File: |======              | (30/100)
+Importing ISO File: |======              | (31/100)
+Importing ISO File: |======              | (32/100)
+Importing ISO File: |======              | (33/100)
+Importing ISO File: |======              | (34/100)
+Importing ISO File: |=======             | (35/100)
+Importing ISO File: |=======             | (36/100)
+Importing ISO File: |=======             | (37/100)
+Importing ISO File: |=======             | (38/100)
+Importing ISO File: |=======             | (39/100)
+Importing ISO File: |========            | (40/100)
+Importing ISO File: |========            | (41/100)
+Importing ISO File: |========            | (42/100)
+Importing ISO File: |========            | (43/100)
+Importing ISO File: |========            | (44/100)
+Importing ISO File: |=========           | (45/100)
+Importing ISO File: |=========           | (46/100)
+Importing ISO File: |=========           | (47/100)
+Importing ISO File: |=========           | (48/100)
+Importing ISO File: |=========           | (49/100)
+Importing ISO File: |==========          | (50/100)
+Importing ISO File: |==========          | (51/100)
+Importing ISO File: |==========          | (52/100)
+Importing ISO File: |==========          | (53/100)
+Importing ISO File: |==========          | (54/100)
+Importing ISO File: |===========         | (55/100)
+Importing ISO File: |===========         | (56/100)
+Importing ISO File: |===========         | (57/100)
+Importing ISO File: |===========         | (58/100)
+Importing ISO File: |===========         | (59/100)
+Importing ISO File: |============        | (60/100)
+Importing ISO File: |============        | (61/100)
+Importing ISO File: |============        | (62/100)
+Importing ISO File: |============        | (63/100)
+Importing ISO File: |============        | (64/100)
+Importing ISO File: |=============       | (65/100)
+Importing ISO File: |=============       | (66/100)
+Importing ISO File: |=============       | (67/100)
+Importing ISO File: |=============       | (68/100)
+Importing ISO File: |=============       | (69/100)
+Importing ISO File: |==============      | (70/100)
+Importing ISO File: |==============      | (71/100)
+Importing ISO File: |==============      | (72/100)
+Importing ISO File: |==============      | (73/100)
+Importing ISO File: |==============      | (74/100)
+Importing ISO File: |===============     | (75/100)
+Importing ISO File: |===============     | (76/100)
+Importing ISO File: |===============     | (77/100)
+Importing ISO File: |===============     | (78/100)
+Importing ISO File: |===============     | (79/100)
+Importing ISO File: |================    | (80/100)
+Importing ISO File: |================    | (81/100)
+Importing ISO File: |================    | (82/100)
+Importing ISO File: |================    | (83/100)
+Importing ISO File: |================    | (84/100)
+Importing ISO File: |=================   | (85/100)
+Importing ISO File: |=================   | (86/100)
+Importing ISO File: |=================   | (87/100)
+Importing ISO File: |=================   | (88/100)
+Importing ISO File: |=================   | (89/100)
+Importing ISO File: |==================  | (90/100)
+Importing ISO File: |==================  | (91/100)
+Importing ISO File: |==================  | (92/100)
+Importing ISO File: |==================  | (93/100)
+Importing ISO File: |==================  | (94/100)
+Importing ISO File: |=================== | (95/100)
+Importing ISO File: |=================== | (96/100)
+Importing ISO File: |=================== | (97/100)
+Importing ISO File: |=================== | (98/100)
+Importing ISO File: |=================== | (99/100)
+                                                          
+[Importer] Unknown input file type for "D:\Main Comp_atemp.mp4"
+Error importing D:\Main Comp_atemp.mp4#trackID=1:name=: Requested URL is not valid or cannot be found
+D:\小丸工具箱v194\小丸工具箱rev194>del "D:\Main Comp_vtemp.mp4" 
+D:\小丸工具箱v194\小丸工具箱rev194>del "D:\Main Comp_atemp.mp4" 
+找不到 D:\Main Comp_atemp.mp4
+D:\小丸工具箱v194\小丸工具箱rev194>echo ===== one file is completed! ===== 
+===== one file is completed! =====
+
+
+===========2016/8/11 21:38:05===========
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\ffmpeg.exe" -i "D:\仙儿姐.mp4" -vn -sn -v 0 -c:a pcm_s16le -f wav pipe:|"D:\小丸工具箱v194\小丸工具箱rev194\tools\neroAacEnc.exe" -ignorelength -lc -br 128000 -if - -of "D:\仙儿姐_atemp.mp4"
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\x264_64-8bit.exe" --crf 23.5 --demuxer auto --threads auto --preset 8  -I 250 -r 4 -b 3 --me umh -i 1 --scenecut 60 -f 1:1 --qcomp 0.5 --psy-rd 0.3:0 --aq-mode 2 --aq-strength 0.8 --vf resize:480,360,,,,lanczos -o "D:\仙儿姐_vtemp.mp4" "D:\仙儿姐.mp4"
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\mp4box.exe" -add "D:\仙儿姐_vtemp.mp4#trackID=1:name=" -add "D:\仙儿姐_atemp.mp4#trackID=1:name=" -new "D:\仙儿姐_x264.mp4"
+
+del "D:\仙儿姐_vtemp.mp4"
+del "D:\仙儿姐_atemp.mp4"
+
+echo ===== one file is completed! =====
+
+
+===========2016/8/11 21:38:21===========
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\ffmpeg.exe" -i "D:\仙儿姐.mp4" -vn -sn -v 0 -c:a pcm_s16le -f wav pipe:  | "D:\小丸工具箱v194\小丸工具箱rev194\tools\neroAacEnc.exe" -ignorelength -lc -br 128000 -if - -of "D:\仙儿姐_atemp.mp4" 
+*************************************************************
+*                                                           *
+*  Nero AAC Encoder                                         *
+*  Copyright 2009 Nero AG                                   *
+*  All Rights Reserved Worldwide                            *
+*                                                           *
+*  Package build date: Feb 18 2010                          *
+*  Package version:    1.5.4.0                              *
+*                                                           *
+*  See -help for a complete list of available parameters.   *
+*                                                           *
+*************************************************************
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\x264_64-8bit.exe" --crf 23.5 --demuxer auto --threads auto --preset 8  -I 250 -r 4 -b 3 --me umh -i 1 --scenecut 60 -f 1:1 --qcomp 0.5 --psy-rd 0.3:0 --aq-mode 2 --aq-strength 0.8 --vf resize:480,360,,,,lanczos -o "D:\仙儿姐_vtemp.mp4" "D:\仙儿姐.mp4" 
+[info]: indexing input file [7.2%]  
+                                            
+ffms [info]: 
+ Format    : mov,mp4,m4a,3gp,3g2,mj2
+ Codec     : h264
+ PixFmt    : yuv420p
+ Framerate : 25/1
+ Timebase  : 1000/25000000
+ Duration  : 0:00:14
+ffms [info]: 1920x1080p 1:1 @ 25/1 fps (vfr)
+ffms [info]: color matrix: bt709
+resize [info]: resizing to 480x360
+x264 [info]: using SAR=4/3
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+x264 [info]: AVC Encoder x264 core 148 r2597+52 4ed4a81 xiaowan [8-bit@all X86_64]
+x264 [info]: profile: High, level: 2.1, subsampling: 4:2:0, bit-depth: 8-bit
+x264 [info]: cabac=1 ref=4 deblock=1:1:1 analyse=0x3:0x133 me=umh subme=10 psy=1 fade_compensate=0.00 psy_rd=0.30:0.00 mixed_ref=1 me_range=24 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=11 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 fgo=0 bframes=3 b_pyramid=2 b_adapt=2 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=1 scenecut=60 intra_refresh=0 rc_lookahead=60 rc=crf mbtree=1 crf=23.5000 qcomp=0.50 qpmin=0:0:0 qpmax=69:69:69 qpstep=4 ip_ratio=1.40 aq=2:0.80 aq-sensitivity=10.00 aq-factor=1.00:1.00:1.00 aq2=0 aq3=0
+x264 [info]: started at Thu Aug 11 21:38:14 2016
+                                                                                                                       
+x264 [info]: frame I:2     Avg QP:21.46  size:  9406
+x264 [info]: frame P:114   Avg QP:24.93  size:  3191
+x264 [info]: frame B:234   Avg QP:28.76  size:  1031
+x264 [info]: consecutive B-frames:  7.1%  3.4% 23.1% 66.3%
+x264 [info]: mb I  I16..4: 47.8% 40.9% 11.3%
+x264 [info]: mb P  I16..4:  8.9%  8.4%  1.2%  P16..4: 25.0%  4.3%  3.7%  0.6%  0.2%    skip:47.8%
+x264 [info]: mb B  I16..4:  0.1%  1.3%  0.2%  B16..8: 11.7%  3.8%  1.3%  direct: 2.2%  skip:79.4%  L0:26.0% L1:46.0% BI:28.0%
+x264 [info]: 8x8 transform intra:50.1% inter:69.2%
+x264 [info]: direct mvs  spatial:97.4% temporal:2.6%
+x264 [info]: coded y,uvDC,uvAC intra: 42.0% 36.9% 13.3% inter: 7.9% 5.9% 1.3%
+x264 [info]: i16 v,h,dc,p: 14% 32%  6% 47%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 21% 12%  4%  7%  6% 11%  6% 14%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 19% 13%  4% 10%  8% 12%  6% 12%
+x264 [info]: i8c dc,h,v,p: 25% 30% 14% 31%
+x264 [info]: Weighted P-Frames: Y:98.2% UV:13.2%
+x264 [info]: ref P L0: 61.5% 10.7% 18.2%  6.6%  2.4%  0.7%
+x264 [info]: ref B L0: 92.8%  5.3%  1.9%
+x264 [info]: ref B L1: 98.2%  1.8%
+x264 [info]: kb/s:356.47
+                                                        
+encoded 350 frames, 66.96 fps, 356.96 kb/s, 610.04 KB
+x264 [info]: ended at Thu Aug 11 21:38:19 2016
+x264 [info]: encoding duration 0:00:05
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\mp4box.exe" -add "D:\仙儿姐_vtemp.mp4#trackID=1:name=" -add "D:\仙儿姐_atemp.mp4#trackID=1:name=" -new "D:\仙儿姐_x264.mp4" 
+IsoMedia import 仙儿姐_vtemp.mp4 - track ID 1 - Video (size 480 x 360)
+Importing ISO File: |                    | (01/100)
+Importing ISO File: |                    | (02/100)
+Importing ISO File: |                    | (03/100)
+Importing ISO File: |                    | (04/100)
+Importing ISO File: |=                   | (05/100)
+Importing ISO File: |=                   | (06/100)
+Importing ISO File: |=                   | (07/100)
+Importing ISO File: |=                   | (08/100)
+Importing ISO File: |=                   | (09/100)
+Importing ISO File: |==                  | (10/100)
+Importing ISO File: |==                  | (11/100)
+Importing ISO File: |==                  | (12/100)
+Importing ISO File: |==                  | (13/100)
+Importing ISO File: |==                  | (14/100)
+Importing ISO File: |===                 | (15/100)
+Importing ISO File: |===                 | (16/100)
+Importing ISO File: |===                 | (17/100)
+Importing ISO File: |===                 | (18/100)
+Importing ISO File: |===                 | (19/100)
+Importing ISO File: |====                | (20/100)
+Importing ISO File: |====                | (21/100)
+Importing ISO File: |====                | (22/100)
+Importing ISO File: |====                | (23/100)
+Importing ISO File: |====                | (24/100)
+Importing ISO File: |=====               | (25/100)
+Importing ISO File: |=====               | (26/100)
+Importing ISO File: |=====               | (27/100)
+Importing ISO File: |=====               | (28/100)
+Importing ISO File: |=====               | (29/100)
+Importing ISO File: |======              | (30/100)
+Importing ISO File: |======              | (31/100)
+Importing ISO File: |======              | (32/100)
+Importing ISO File: |======              | (33/100)
+Importing ISO File: |======              | (34/100)
+Importing ISO File: |=======             | (35/100)
+Importing ISO File: |=======             | (36/100)
+Importing ISO File: |=======             | (37/100)
+Importing ISO File: |=======             | (38/100)
+Importing ISO File: |=======             | (39/100)
+Importing ISO File: |========            | (40/100)
+Importing ISO File: |========            | (41/100)
+Importing ISO File: |========            | (42/100)
+Importing ISO File: |========            | (43/100)
+Importing ISO File: |========            | (44/100)
+Importing ISO File: |=========           | (45/100)
+Importing ISO File: |=========           | (46/100)
+Importing ISO File: |=========           | (47/100)
+Importing ISO File: |=========           | (48/100)
+Importing ISO File: |=========           | (49/100)
+Importing ISO File: |==========          | (50/100)
+Importing ISO File: |==========          | (51/100)
+Importing ISO File: |==========          | (52/100)
+Importing ISO File: |==========          | (53/100)
+Importing ISO File: |==========          | (54/100)
+Importing ISO File: |===========         | (55/100)
+Importing ISO File: |===========         | (56/100)
+Importing ISO File: |===========         | (57/100)
+Importing ISO File: |===========         | (58/100)
+Importing ISO File: |===========         | (59/100)
+Importing ISO File: |============        | (60/100)
+Importing ISO File: |============        | (61/100)
+Importing ISO File: |============        | (62/100)
+Importing ISO File: |============        | (63/100)
+Importing ISO File: |============        | (64/100)
+Importing ISO File: |=============       | (65/100)
+Importing ISO File: |=============       | (66/100)
+Importing ISO File: |=============       | (67/100)
+Importing ISO File: |=============       | (68/100)
+Importing ISO File: |=============       | (69/100)
+Importing ISO File: |==============      | (70/100)
+Importing ISO File: |==============      | (71/100)
+Importing ISO File: |==============      | (72/100)
+Importing ISO File: |==============      | (73/100)
+Importing ISO File: |==============      | (74/100)
+Importing ISO File: |===============     | (75/100)
+Importing ISO File: |===============     | (76/100)
+Importing ISO File: |===============     | (77/100)
+Importing ISO File: |===============     | (78/100)
+Importing ISO File: |===============     | (79/100)
+Importing ISO File: |================    | (80/100)
+Importing ISO File: |================    | (81/100)
+Importing ISO File: |================    | (82/100)
+Importing ISO File: |================    | (83/100)
+Importing ISO File: |================    | (84/100)
+Importing ISO File: |=================   | (85/100)
+Importing ISO File: |=================   | (86/100)
+Importing ISO File: |=================   | (87/100)
+Importing ISO File: |=================   | (88/100)
+Importing ISO File: |=================   | (89/100)
+Importing ISO File: |==================  | (90/100)
+Importing ISO File: |==================  | (91/100)
+Importing ISO File: |==================  | (92/100)
+Importing ISO File: |==================  | (93/100)
+Importing ISO File: |==================  | (94/100)
+Importing ISO File: |=================== | (95/100)
+Importing ISO File: |=================== | (96/100)
+Importing ISO File: |=================== | (97/100)
+Importing ISO File: |=================== | (98/100)
+Importing ISO File: |=================== | (99/100)
+                                                          
+IsoMedia import 仙儿姐_atemp.mp4 - track ID 1 - Audio (SR 48000 - 2 channels)
+Importing ISO File: |                    | (01/100)
+Importing ISO File: |                    | (02/100)
+Importing ISO File: |                    | (03/100)
+Importing ISO File: |                    | (04/100)
+Importing ISO File: |=                   | (05/100)
+Importing ISO File: |=                   | (06/100)
+Importing ISO File: |=                   | (07/100)
+Importing ISO File: |=                   | (08/100)
+Importing ISO File: |=                   | (09/100)
+Importing ISO File: |==                  | (10/100)
+Importing ISO File: |==                  | (11/100)
+Importing ISO File: |==                  | (12/100)
+Importing ISO File: |==                  | (13/100)
+Importing ISO File: |==                  | (14/100)
+Importing ISO File: |===                 | (15/100)
+Importing ISO File: |===                 | (16/100)
+Importing ISO File: |===                 | (17/100)
+Importing ISO File: |===                 | (18/100)
+Importing ISO File: |===                 | (19/100)
+Importing ISO File: |====                | (20/100)
+Importing ISO File: |====                | (21/100)
+Importing ISO File: |====                | (22/100)
+Importing ISO File: |====                | (23/100)
+Importing ISO File: |====                | (24/100)
+Importing ISO File: |=====               | (25/100)
+Importing ISO File: |=====               | (26/100)
+Importing ISO File: |=====               | (27/100)
+Importing ISO File: |=====               | (28/100)
+Importing ISO File: |=====               | (29/100)
+Importing ISO File: |======              | (30/100)
+Importing ISO File: |======              | (31/100)
+Importing ISO File: |======              | (32/100)
+Importing ISO File: |======              | (33/100)
+Importing ISO File: |======              | (34/100)
+Importing ISO File: |=======             | (35/100)
+Importing ISO File: |=======             | (36/100)
+Importing ISO File: |=======             | (37/100)
+Importing ISO File: |=======             | (38/100)
+Importing ISO File: |=======             | (39/100)
+Importing ISO File: |========            | (40/100)
+Importing ISO File: |========            | (41/100)
+Importing ISO File: |========            | (42/100)
+Importing ISO File: |========            | (43/100)
+Importing ISO File: |========            | (44/100)
+Importing ISO File: |=========           | (45/100)
+Importing ISO File: |=========           | (46/100)
+Importing ISO File: |=========           | (47/100)
+Importing ISO File: |=========           | (48/100)
+Importing ISO File: |=========           | (49/100)
+Importing ISO File: |==========          | (50/100)
+Importing ISO File: |==========          | (51/100)
+Importing ISO File: |==========          | (52/100)
+Importing ISO File: |==========          | (53/100)
+Importing ISO File: |==========          | (54/100)
+Importing ISO File: |===========         | (55/100)
+Importing ISO File: |===========         | (56/100)
+Importing ISO File: |===========         | (57/100)
+Importing ISO File: |===========         | (58/100)
+Importing ISO File: |===========         | (59/100)
+Importing ISO File: |============        | (60/100)
+Importing ISO File: |============        | (61/100)
+Importing ISO File: |============        | (62/100)
+Importing ISO File: |============        | (63/100)
+Importing ISO File: |============        | (64/100)
+Importing ISO File: |=============       | (65/100)
+Importing ISO File: |=============       | (66/100)
+Importing ISO File: |=============       | (67/100)
+Importing ISO File: |=============       | (68/100)
+Importing ISO File: |=============       | (69/100)
+Importing ISO File: |==============      | (70/100)
+Importing ISO File: |==============      | (71/100)
+Importing ISO File: |==============      | (72/100)
+Importing ISO File: |==============      | (73/100)
+Importing ISO File: |==============      | (74/100)
+Importing ISO File: |===============     | (75/100)
+Importing ISO File: |===============     | (76/100)
+Importing ISO File: |===============     | (77/100)
+Importing ISO File: |===============     | (78/100)
+Importing ISO File: |===============     | (79/100)
+Importing ISO File: |================    | (80/100)
+Importing ISO File: |================    | (81/100)
+Importing ISO File: |================    | (82/100)
+Importing ISO File: |================    | (83/100)
+Importing ISO File: |================    | (84/100)
+Importing ISO File: |=================   | (85/100)
+Importing ISO File: |=================   | (86/100)
+Importing ISO File: |=================   | (87/100)
+Importing ISO File: |=================   | (88/100)
+Importing ISO File: |=================   | (89/100)
+Importing ISO File: |==================  | (90/100)
+Importing ISO File: |==================  | (91/100)
+Importing ISO File: |==================  | (92/100)
+Importing ISO File: |==================  | (93/100)
+Importing ISO File: |==================  | (94/100)
+Importing ISO File: |=================== | (95/100)
+Importing ISO File: |=================== | (96/100)
+Importing ISO File: |=================== | (97/100)
+Importing ISO File: |=================== | (98/100)
+Importing ISO File: |=================== | (99/100)
+                                                          
+Saving D:\仙儿姐_x264.mp4: 0.500 secs Interleaving
+ISO File Writing: |                    | (01/100)
+ISO File Writing: |                    | (02/100)
+ISO File Writing: |                    | (03/100)
+ISO File Writing: |                    | (04/100)
+ISO File Writing: |=                   | (05/100)
+ISO File Writing: |=                   | (06/100)
+ISO File Writing: |=                   | (07/100)
+ISO File Writing: |=                   | (08/100)
+ISO File Writing: |=                   | (09/100)
+ISO File Writing: |==                  | (10/100)
+ISO File Writing: |==                  | (11/100)
+ISO File Writing: |==                  | (12/100)
+ISO File Writing: |==                  | (13/100)
+ISO File Writing: |==                  | (14/100)
+ISO File Writing: |===                 | (15/100)
+ISO File Writing: |===                 | (16/100)
+ISO File Writing: |===                 | (17/100)
+ISO File Writing: |===                 | (18/100)
+ISO File Writing: |===                 | (19/100)
+ISO File Writing: |====                | (20/100)
+ISO File Writing: |====                | (21/100)
+ISO File Writing: |====                | (22/100)
+ISO File Writing: |====                | (23/100)
+ISO File Writing: |====                | (24/100)
+ISO File Writing: |=====               | (25/100)
+ISO File Writing: |=====               | (26/100)
+ISO File Writing: |=====               | (27/100)
+ISO File Writing: |=====               | (28/100)
+ISO File Writing: |=====               | (29/100)
+ISO File Writing: |======              | (30/100)
+ISO File Writing: |======              | (31/100)
+ISO File Writing: |======              | (32/100)
+ISO File Writing: |======              | (33/100)
+ISO File Writing: |======              | (34/100)
+ISO File Writing: |=======             | (35/100)
+ISO File Writing: |=======             | (36/100)
+ISO File Writing: |=======             | (37/100)
+ISO File Writing: |=======             | (38/100)
+ISO File Writing: |=======             | (39/100)
+ISO File Writing: |========            | (40/100)
+ISO File Writing: |========            | (41/100)
+ISO File Writing: |========            | (42/100)
+ISO File Writing: |========            | (43/100)
+ISO File Writing: |========            | (44/100)
+ISO File Writing: |=========           | (45/100)
+ISO File Writing: |=========           | (46/100)
+ISO File Writing: |=========           | (47/100)
+ISO File Writing: |=========           | (48/100)
+ISO File Writing: |=========           | (49/100)
+ISO File Writing: |==========          | (50/100)
+ISO File Writing: |==========          | (51/100)
+ISO File Writing: |==========          | (52/100)
+ISO File Writing: |==========          | (53/100)
+ISO File Writing: |==========          | (54/100)
+ISO File Writing: |===========         | (55/100)
+ISO File Writing: |===========         | (56/100)
+ISO File Writing: |===========         | (57/100)
+ISO File Writing: |===========         | (58/100)
+ISO File Writing: |===========         | (59/100)
+ISO File Writing: |============        | (60/100)
+ISO File Writing: |============        | (61/100)
+ISO File Writing: |============        | (62/100)
+ISO File Writing: |============        | (63/100)
+ISO File Writing: |============        | (64/100)
+ISO File Writing: |=============       | (65/100)
+ISO File Writing: |=============       | (66/100)
+ISO File Writing: |=============       | (67/100)
+ISO File Writing: |=============       | (68/100)
+ISO File Writing: |=============       | (69/100)
+ISO File Writing: |==============      | (70/100)
+ISO File Writing: |==============      | (71/100)
+ISO File Writing: |==============      | (72/100)
+ISO File Writing: |==============      | (73/100)
+ISO File Writing: |==============      | (74/100)
+ISO File Writing: |===============     | (75/100)
+ISO File Writing: |===============     | (76/100)
+ISO File Writing: |===============     | (77/100)
+ISO File Writing: |===============     | (78/100)
+ISO File Writing: |===============     | (79/100)
+ISO File Writing: |================    | (80/100)
+ISO File Writing: |================    | (81/100)
+ISO File Writing: |================    | (82/100)
+ISO File Writing: |================    | (83/100)
+ISO File Writing: |================    | (84/100)
+ISO File Writing: |=================   | (85/100)
+ISO File Writing: |=================   | (86/100)
+ISO File Writing: |=================   | (87/100)
+ISO File Writing: |=================   | (88/100)
+ISO File Writing: |=================   | (89/100)
+ISO File Writing: |==================  | (90/100)
+ISO File Writing: |==================  | (91/100)
+ISO File Writing: |==================  | (92/100)
+ISO File Writing: |==================  | (93/100)
+ISO File Writing: |==================  | (94/100)
+ISO File Writing: |=================== | (95/100)
+ISO File Writing: |=================== | (96/100)
+ISO File Writing: |=================== | (97/100)
+ISO File Writing: |=================== | (98/100)
+ISO File Writing: |=================== | (99/100)
+                                                        
+D:\小丸工具箱v194\小丸工具箱rev194>del "D:\仙儿姐_vtemp.mp4" 
+D:\小丸工具箱v194\小丸工具箱rev194>del "D:\仙儿姐_atemp.mp4" 
+D:\小丸工具箱v194\小丸工具箱rev194>echo ===== one file is completed! ===== 
+===== one file is completed! =====
+
+
+===========2016/8/11 21:41:38===========
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\ffmpeg.exe" -i "D:\仙儿姐.mp4" -vn -sn -v 0 -c:a pcm_s16le -f wav pipe:|"D:\小丸工具箱v194\小丸工具箱rev194\tools\neroAacEnc.exe" -ignorelength -lc -br 96000 -if - -of "D:\仙儿姐_atemp.mp4"
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\x264_64-8bit.exe" --crf 23.5 --demuxer ffms --threads auto --preset 8  -I 250 -r 4 -b 3 --me umh -i 1 --scenecut 60 -f 1:1 --qcomp 0.5 --psy-rd 0.3:0 --aq-mode 2 --aq-strength 0.8 --vf resize:480,360,,,,lanczos -o "D:\仙儿姐_vtemp.mp4" "D:\仙儿姐.mp4"
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\mp4box.exe" -add "D:\仙儿姐_vtemp.mp4#trackID=1:name=" -add "D:\仙儿姐_atemp.mp4#trackID=1:name=" -new "D:\仙儿姐_x264.mp4"
+
+del "D:\仙儿姐_vtemp.mp4"
+del "D:\仙儿姐_atemp.mp4"
+
+echo ===== one file is completed! =====
+
+
+===========2016/8/11 21:41:46===========
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\ffmpeg.exe" -i "D:\仙儿姐.mp4" -vn -sn -v 0 -c:a pcm_s16le -f wav pipe:  | "D:\小丸工具箱v194\小丸工具箱rev194\tools\neroAacEnc.exe" -ignorelength -lc -br 96000 -if - -of "D:\仙儿姐_atemp.mp4" 
+*************************************************************
+*                                                           *
+*  Nero AAC Encoder                                         *
+*  Copyright 2009 Nero AG                                   *
+*  All Rights Reserved Worldwide                            *
+*                                                           *
+*  Package build date: Feb 18 2010                          *
+*  Package version:    1.5.4.0                              *
+*                                                           *
+*  See -help for a complete list of available parameters.   *
+*                                                           *
+*************************************************************
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\x264_64-8bit.exe" --crf 23.5 --demuxer ffms --threads auto --preset 8  -I 250 -r 4 -b 3 --me umh -i 1 --scenecut 60 -f 1:1 --qcomp 0.5 --psy-rd 0.3:0 --aq-mode 2 --aq-strength 0.8 --vf resize:480,360,,,,lanczos -o "D:\仙儿姐_vtemp.mp4" "D:\仙儿姐.mp4" 
+[info]: indexing input file [7.2%]  
+                                            
+ffms [info]: 
+ Format    : mov,mp4,m4a,3gp,3g2,mj2
+ Codec     : h264
+ PixFmt    : yuv420p
+ Framerate : 25/1
+ Timebase  : 1000/25000000
+ Duration  : 0:00:14
+ffms [info]: 1920x1080p 1:1 @ 25/1 fps (vfr)
+ffms [info]: color matrix: bt709
+resize [info]: resizing to 480x360
+x264 [info]: using SAR=4/3
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+x264 [info]: AVC Encoder x264 core 148 r2597+52 4ed4a81 xiaowan [8-bit@all X86_64]
+x264 [info]: profile: High, level: 2.1, subsampling: 4:2:0, bit-depth: 8-bit
+x264 [info]: cabac=1 ref=4 deblock=1:1:1 analyse=0x3:0x133 me=umh subme=10 psy=1 fade_compensate=0.00 psy_rd=0.30:0.00 mixed_ref=1 me_range=24 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=11 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 fgo=0 bframes=3 b_pyramid=2 b_adapt=2 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=1 scenecut=60 intra_refresh=0 rc_lookahead=60 rc=crf mbtree=1 crf=23.5000 qcomp=0.50 qpmin=0:0:0 qpmax=69:69:69 qpstep=4 ip_ratio=1.40 aq=2:0.80 aq-sensitivity=10.00 aq-factor=1.00:1.00:1.00 aq2=0 aq3=0
+x264 [info]: started at Thu Aug 11 21:41:40 2016
+                                                                                                                       
+x264 [info]: frame I:2     Avg QP:21.46  size:  9406
+x264 [info]: frame P:114   Avg QP:24.93  size:  3191
+x264 [info]: frame B:234   Avg QP:28.76  size:  1031
+x264 [info]: consecutive B-frames:  7.1%  3.4% 23.1% 66.3%
+x264 [info]: mb I  I16..4: 47.8% 40.9% 11.3%
+x264 [info]: mb P  I16..4:  8.9%  8.4%  1.2%  P16..4: 25.0%  4.3%  3.7%  0.6%  0.2%    skip:47.8%
+x264 [info]: mb B  I16..4:  0.1%  1.3%  0.2%  B16..8: 11.7%  3.8%  1.3%  direct: 2.2%  skip:79.4%  L0:26.0% L1:46.0% BI:28.0%
+x264 [info]: 8x8 transform intra:50.1% inter:69.2%
+x264 [info]: direct mvs  spatial:97.4% temporal:2.6%
+x264 [info]: coded y,uvDC,uvAC intra: 42.0% 36.9% 13.3% inter: 7.9% 5.9% 1.3%
+x264 [info]: i16 v,h,dc,p: 14% 32%  6% 47%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 21% 12%  4%  7%  6% 11%  6% 14%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 19% 13%  4% 10%  8% 12%  6% 12%
+x264 [info]: i8c dc,h,v,p: 25% 30% 14% 31%
+x264 [info]: Weighted P-Frames: Y:98.2% UV:13.2%
+x264 [info]: ref P L0: 61.5% 10.7% 18.2%  6.6%  2.4%  0.7%
+x264 [info]: ref B L0: 92.8%  5.3%  1.9%
+x264 [info]: ref B L1: 98.2%  1.8%
+x264 [info]: kb/s:356.47
+                                                        
+encoded 350 frames, 67.40 fps, 356.96 kb/s, 610.04 KB
+x264 [info]: ended at Thu Aug 11 21:41:45 2016
+x264 [info]: encoding duration 0:00:05
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\mp4box.exe" -add "D:\仙儿姐_vtemp.mp4#trackID=1:name=" -add "D:\仙儿姐_atemp.mp4#trackID=1:name=" -new "D:\仙儿姐_x264.mp4" 
+IsoMedia import 仙儿姐_vtemp.mp4 - track ID 1 - Video (size 480 x 360)
+Importing ISO File: |                    | (01/100)
+Importing ISO File: |                    | (02/100)
+Importing ISO File: |                    | (03/100)
+Importing ISO File: |                    | (04/100)
+Importing ISO File: |=                   | (05/100)
+Importing ISO File: |=                   | (06/100)
+Importing ISO File: |=                   | (07/100)
+Importing ISO File: |=                   | (08/100)
+Importing ISO File: |=                   | (09/100)
+Importing ISO File: |==                  | (10/100)
+Importing ISO File: |==                  | (11/100)
+Importing ISO File: |==                  | (12/100)
+Importing ISO File: |==                  | (13/100)
+Importing ISO File: |==                  | (14/100)
+Importing ISO File: |===                 | (15/100)
+Importing ISO File: |===                 | (16/100)
+Importing ISO File: |===                 | (17/100)
+Importing ISO File: |===                 | (18/100)
+Importing ISO File: |===                 | (19/100)
+Importing ISO File: |====                | (20/100)
+Importing ISO File: |====                | (21/100)
+Importing ISO File: |====                | (22/100)
+Importing ISO File: |====                | (23/100)
+Importing ISO File: |====                | (24/100)
+Importing ISO File: |=====               | (25/100)
+Importing ISO File: |=====               | (26/100)
+Importing ISO File: |=====               | (27/100)
+Importing ISO File: |=====               | (28/100)
+Importing ISO File: |=====               | (29/100)
+Importing ISO File: |======              | (30/100)
+Importing ISO File: |======              | (31/100)
+Importing ISO File: |======              | (32/100)
+Importing ISO File: |======              | (33/100)
+Importing ISO File: |======              | (34/100)
+Importing ISO File: |=======             | (35/100)
+Importing ISO File: |=======             | (36/100)
+Importing ISO File: |=======             | (37/100)
+Importing ISO File: |=======             | (38/100)
+Importing ISO File: |=======             | (39/100)
+Importing ISO File: |========            | (40/100)
+Importing ISO File: |========            | (41/100)
+Importing ISO File: |========            | (42/100)
+Importing ISO File: |========            | (43/100)
+Importing ISO File: |========            | (44/100)
+Importing ISO File: |=========           | (45/100)
+Importing ISO File: |=========           | (46/100)
+Importing ISO File: |=========           | (47/100)
+Importing ISO File: |=========           | (48/100)
+Importing ISO File: |=========           | (49/100)
+Importing ISO File: |==========          | (50/100)
+Importing ISO File: |==========          | (51/100)
+Importing ISO File: |==========          | (52/100)
+Importing ISO File: |==========          | (53/100)
+Importing ISO File: |==========          | (54/100)
+Importing ISO File: |===========         | (55/100)
+Importing ISO File: |===========         | (56/100)
+Importing ISO File: |===========         | (57/100)
+Importing ISO File: |===========         | (58/100)
+Importing ISO File: |===========         | (59/100)
+Importing ISO File: |============        | (60/100)
+Importing ISO File: |============        | (61/100)
+Importing ISO File: |============        | (62/100)
+Importing ISO File: |============        | (63/100)
+Importing ISO File: |============        | (64/100)
+Importing ISO File: |=============       | (65/100)
+Importing ISO File: |=============       | (66/100)
+Importing ISO File: |=============       | (67/100)
+Importing ISO File: |=============       | (68/100)
+Importing ISO File: |=============       | (69/100)
+Importing ISO File: |==============      | (70/100)
+Importing ISO File: |==============      | (71/100)
+Importing ISO File: |==============      | (72/100)
+Importing ISO File: |==============      | (73/100)
+Importing ISO File: |==============      | (74/100)
+Importing ISO File: |===============     | (75/100)
+Importing ISO File: |===============     | (76/100)
+Importing ISO File: |===============     | (77/100)
+Importing ISO File: |===============     | (78/100)
+Importing ISO File: |===============     | (79/100)
+Importing ISO File: |================    | (80/100)
+Importing ISO File: |================    | (81/100)
+Importing ISO File: |================    | (82/100)
+Importing ISO File: |================    | (83/100)
+Importing ISO File: |================    | (84/100)
+Importing ISO File: |=================   | (85/100)
+Importing ISO File: |=================   | (86/100)
+Importing ISO File: |=================   | (87/100)
+Importing ISO File: |=================   | (88/100)
+Importing ISO File: |=================   | (89/100)
+Importing ISO File: |==================  | (90/100)
+Importing ISO File: |==================  | (91/100)
+Importing ISO File: |==================  | (92/100)
+Importing ISO File: |==================  | (93/100)
+Importing ISO File: |==================  | (94/100)
+Importing ISO File: |=================== | (95/100)
+Importing ISO File: |=================== | (96/100)
+Importing ISO File: |=================== | (97/100)
+Importing ISO File: |=================== | (98/100)
+Importing ISO File: |=================== | (99/100)
+                                                          
+IsoMedia import 仙儿姐_atemp.mp4 - track ID 1 - Audio (SR 48000 - 2 channels)
+Importing ISO File: |                    | (01/100)
+Importing ISO File: |                    | (02/100)
+Importing ISO File: |                    | (03/100)
+Importing ISO File: |                    | (04/100)
+Importing ISO File: |=                   | (05/100)
+Importing ISO File: |=                   | (06/100)
+Importing ISO File: |=                   | (07/100)
+Importing ISO File: |=                   | (08/100)
+Importing ISO File: |=                   | (09/100)
+Importing ISO File: |==                  | (10/100)
+Importing ISO File: |==                  | (11/100)
+Importing ISO File: |==                  | (12/100)
+Importing ISO File: |==                  | (13/100)
+Importing ISO File: |==                  | (14/100)
+Importing ISO File: |===                 | (15/100)
+Importing ISO File: |===                 | (16/100)
+Importing ISO File: |===                 | (17/100)
+Importing ISO File: |===                 | (18/100)
+Importing ISO File: |===                 | (19/100)
+Importing ISO File: |====                | (20/100)
+Importing ISO File: |====                | (21/100)
+Importing ISO File: |====                | (22/100)
+Importing ISO File: |====                | (23/100)
+Importing ISO File: |====                | (24/100)
+Importing ISO File: |=====               | (25/100)
+Importing ISO File: |=====               | (26/100)
+Importing ISO File: |=====               | (27/100)
+Importing ISO File: |=====               | (28/100)
+Importing ISO File: |=====               | (29/100)
+Importing ISO File: |======              | (30/100)
+Importing ISO File: |======              | (31/100)
+Importing ISO File: |======              | (32/100)
+Importing ISO File: |======              | (33/100)
+Importing ISO File: |======              | (34/100)
+Importing ISO File: |=======             | (35/100)
+Importing ISO File: |=======             | (36/100)
+Importing ISO File: |=======             | (37/100)
+Importing ISO File: |=======             | (38/100)
+Importing ISO File: |=======             | (39/100)
+Importing ISO File: |========            | (40/100)
+Importing ISO File: |========            | (41/100)
+Importing ISO File: |========            | (42/100)
+Importing ISO File: |========            | (43/100)
+Importing ISO File: |========            | (44/100)
+Importing ISO File: |=========           | (45/100)
+Importing ISO File: |=========           | (46/100)
+Importing ISO File: |=========           | (47/100)
+Importing ISO File: |=========           | (48/100)
+Importing ISO File: |=========           | (49/100)
+Importing ISO File: |==========          | (50/100)
+Importing ISO File: |==========          | (51/100)
+Importing ISO File: |==========          | (52/100)
+Importing ISO File: |==========          | (53/100)
+Importing ISO File: |==========          | (54/100)
+Importing ISO File: |===========         | (55/100)
+Importing ISO File: |===========         | (56/100)
+Importing ISO File: |===========         | (57/100)
+Importing ISO File: |===========         | (58/100)
+Importing ISO File: |===========         | (59/100)
+Importing ISO File: |============        | (60/100)
+Importing ISO File: |============        | (61/100)
+Importing ISO File: |============        | (62/100)
+Importing ISO File: |============        | (63/100)
+Importing ISO File: |============        | (64/100)
+Importing ISO File: |=============       | (65/100)
+Importing ISO File: |=============       | (66/100)
+Importing ISO File: |=============       | (67/100)
+Importing ISO File: |=============       | (68/100)
+Importing ISO File: |=============       | (69/100)
+Importing ISO File: |==============      | (70/100)
+Importing ISO File: |==============      | (71/100)
+Importing ISO File: |==============      | (72/100)
+Importing ISO File: |==============      | (73/100)
+Importing ISO File: |==============      | (74/100)
+Importing ISO File: |===============     | (75/100)
+Importing ISO File: |===============     | (76/100)
+Importing ISO File: |===============     | (77/100)
+Importing ISO File: |===============     | (78/100)
+Importing ISO File: |===============     | (79/100)
+Importing ISO File: |================    | (80/100)
+Importing ISO File: |================    | (81/100)
+Importing ISO File: |================    | (82/100)
+Importing ISO File: |================    | (83/100)
+Importing ISO File: |================    | (84/100)
+Importing ISO File: |=================   | (85/100)
+Importing ISO File: |=================   | (86/100)
+Importing ISO File: |=================   | (87/100)
+Importing ISO File: |=================   | (88/100)
+Importing ISO File: |=================   | (89/100)
+Importing ISO File: |==================  | (90/100)
+Importing ISO File: |==================  | (91/100)
+Importing ISO File: |==================  | (92/100)
+Importing ISO File: |==================  | (93/100)
+Importing ISO File: |==================  | (94/100)
+Importing ISO File: |=================== | (95/100)
+Importing ISO File: |=================== | (96/100)
+Importing ISO File: |=================== | (97/100)
+Importing ISO File: |=================== | (98/100)
+Importing ISO File: |=================== | (99/100)
+                                                          
+Saving D:\仙儿姐_x264.mp4: 0.500 secs Interleaving
+ISO File Writing: |                    | (01/100)
+ISO File Writing: |                    | (02/100)
+ISO File Writing: |                    | (03/100)
+ISO File Writing: |                    | (04/100)
+ISO File Writing: |=                   | (05/100)
+ISO File Writing: |=                   | (06/100)
+ISO File Writing: |=                   | (07/100)
+ISO File Writing: |=                   | (08/100)
+ISO File Writing: |=                   | (09/100)
+ISO File Writing: |==                  | (10/100)
+ISO File Writing: |==                  | (11/100)
+ISO File Writing: |==                  | (12/100)
+ISO File Writing: |==                  | (13/100)
+ISO File Writing: |==                  | (14/100)
+ISO File Writing: |===                 | (15/100)
+ISO File Writing: |===                 | (16/100)
+ISO File Writing: |===                 | (17/100)
+ISO File Writing: |===                 | (18/100)
+ISO File Writing: |===                 | (19/100)
+ISO File Writing: |====                | (20/100)
+ISO File Writing: |====                | (21/100)
+ISO File Writing: |====                | (22/100)
+ISO File Writing: |====                | (23/100)
+ISO File Writing: |====                | (24/100)
+ISO File Writing: |=====               | (25/100)
+ISO File Writing: |=====               | (26/100)
+ISO File Writing: |=====               | (27/100)
+ISO File Writing: |=====               | (28/100)
+ISO File Writing: |=====               | (29/100)
+ISO File Writing: |======              | (30/100)
+ISO File Writing: |======              | (31/100)
+ISO File Writing: |======              | (32/100)
+ISO File Writing: |======              | (33/100)
+ISO File Writing: |======              | (34/100)
+ISO File Writing: |=======             | (35/100)
+ISO File Writing: |=======             | (36/100)
+ISO File Writing: |=======             | (37/100)
+ISO File Writing: |=======             | (38/100)
+ISO File Writing: |=======             | (39/100)
+ISO File Writing: |========            | (40/100)
+ISO File Writing: |========            | (41/100)
+ISO File Writing: |========            | (42/100)
+ISO File Writing: |========            | (43/100)
+ISO File Writing: |========            | (44/100)
+ISO File Writing: |=========           | (45/100)
+ISO File Writing: |=========           | (46/100)
+ISO File Writing: |=========           | (47/100)
+ISO File Writing: |=========           | (48/100)
+ISO File Writing: |=========           | (49/100)
+ISO File Writing: |==========          | (50/100)
+ISO File Writing: |==========          | (51/100)
+ISO File Writing: |==========          | (52/100)
+ISO File Writing: |==========          | (53/100)
+ISO File Writing: |==========          | (54/100)
+ISO File Writing: |===========         | (55/100)
+ISO File Writing: |===========         | (56/100)
+ISO File Writing: |===========         | (57/100)
+ISO File Writing: |===========         | (58/100)
+ISO File Writing: |===========         | (59/100)
+ISO File Writing: |============        | (60/100)
+ISO File Writing: |============        | (61/100)
+ISO File Writing: |============        | (62/100)
+ISO File Writing: |============        | (63/100)
+ISO File Writing: |============        | (64/100)
+ISO File Writing: |=============       | (65/100)
+ISO File Writing: |=============       | (66/100)
+ISO File Writing: |=============       | (67/100)
+ISO File Writing: |=============       | (68/100)
+ISO File Writing: |=============       | (69/100)
+ISO File Writing: |==============      | (70/100)
+ISO File Writing: |==============      | (71/100)
+ISO File Writing: |==============      | (72/100)
+ISO File Writing: |==============      | (73/100)
+ISO File Writing: |==============      | (74/100)
+ISO File Writing: |===============     | (75/100)
+ISO File Writing: |===============     | (76/100)
+ISO File Writing: |===============     | (77/100)
+ISO File Writing: |===============     | (78/100)
+ISO File Writing: |===============     | (79/100)
+ISO File Writing: |================    | (80/100)
+ISO File Writing: |================    | (81/100)
+ISO File Writing: |================    | (82/100)
+ISO File Writing: |================    | (83/100)
+ISO File Writing: |================    | (84/100)
+ISO File Writing: |=================   | (85/100)
+ISO File Writing: |=================   | (86/100)
+ISO File Writing: |=================   | (87/100)
+ISO File Writing: |=================   | (88/100)
+ISO File Writing: |=================   | (89/100)
+ISO File Writing: |==================  | (90/100)
+ISO File Writing: |==================  | (91/100)
+ISO File Writing: |==================  | (92/100)
+ISO File Writing: |==================  | (93/100)
+ISO File Writing: |==================  | (94/100)
+ISO File Writing: |=================== | (95/100)
+ISO File Writing: |=================== | (96/100)
+ISO File Writing: |=================== | (97/100)
+ISO File Writing: |=================== | (98/100)
+ISO File Writing: |=================== | (99/100)
+                                                        
+D:\小丸工具箱v194\小丸工具箱rev194>del "D:\仙儿姐_vtemp.mp4" 
+D:\小丸工具箱v194\小丸工具箱rev194>del "D:\仙儿姐_atemp.mp4" 
+D:\小丸工具箱v194\小丸工具箱rev194>echo ===== one file is completed! ===== 
+===== one file is completed! =====
+
+
+===========2016/8/11 21:42:45===========
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\ffmpeg.exe" -i "D:\仙儿姐.mp4" -vn -sn -v 0 -c:a pcm_s16le -f wav pipe:|"D:\小丸工具箱v194\小丸工具箱rev194\tools\neroAacEnc.exe" -ignorelength -lc -br 96000 -if - -of "D:\仙儿姐_atemp.mp4"
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\x264_64-8bit.exe" --crf 23.5 --demuxer ffms --threads auto --preset 8  -I 250 -r 4 -b 3 --me umh -i 1 --scenecut 60 -f 1:1 --qcomp 0.5 --psy-rd 0.3:0 --aq-mode 2 --aq-strength 0.8 --vf resize:480,360,,,,lanczos --frames 10 -o "D:\仙儿姐_vtemp.mp4" "D:\仙儿姐.mp4"
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\mp4box.exe" -add "D:\仙儿姐_vtemp.mp4#trackID=1:name=" -add "D:\仙儿姐_atemp.mp4#trackID=1:name=" -new "D:\仙儿姐_x264.mp4"
+
+del "D:\仙儿姐_vtemp.mp4"
+del "D:\仙儿姐_atemp.mp4"
+
+echo ===== one file is completed! =====
+
+
+===========2016/8/11 21:42:47===========
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\ffmpeg.exe" -i "D:\仙儿姐.mp4" -vn -sn -v 0 -c:a pcm_s16le -f wav pipe:  | "D:\小丸工具箱v194\小丸工具箱rev194\tools\neroAacEnc.exe" -ignorelength -lc -br 96000 -if - -of "D:\仙儿姐_atemp.mp4" 
+*************************************************************
+*                                                           *
+*  Nero AAC Encoder                                         *
+*  Copyright 2009 Nero AG                                   *
+*  All Rights Reserved Worldwide                            *
+*                                                           *
+*  Package build date: Feb 18 2010                          *
+*  Package version:    1.5.4.0                              *
+*                                                           *
+*  See -help for a complete list of available parameters.   *
+*                                                           *
+*************************************************************
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\x264_64-8bit.exe" --crf 23.5 --demuxer ffms --threads auto --preset 8  -I 250 -r 4 -b 3 --me umh -i 1 --scenecut 60 -f 1:1 --qcomp 0.5 --psy-rd 0.3:0 --aq-mode 2 --aq-strength 0.8 --vf resize:480,360,,,,lanczos --frames 10 -o "D:\仙儿姐_vtemp.mp4" "D:\仙儿姐.mp4" 
+[info]: indexing input file [7.2%]  
+                                            
+ffms [info]: 
+ Format    : mov,mp4,m4a,3gp,3g2,mj2
+ Codec     : h264
+ PixFmt    : yuv420p
+ Framerate : 25/1
+ Timebase  : 1000/25000000
+ Duration  : 0:00:14
+ffms [info]: 1920x1080p 1:1 @ 25/1 fps (vfr)
+ffms [info]: color matrix: bt709
+resize [info]: resizing to 480x360
+x264 [info]: using SAR=4/3
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+x264 [info]: AVC Encoder x264 core 148 r2597+52 4ed4a81 xiaowan [8-bit@all X86_64]
+x264 [info]: profile: High, level: 2.1, subsampling: 4:2:0, bit-depth: 8-bit
+x264 [info]: cabac=1 ref=4 deblock=1:1:1 analyse=0x3:0x133 me=umh subme=10 psy=1 fade_compensate=0.00 psy_rd=0.30:0.00 mixed_ref=1 me_range=24 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=11 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 fgo=0 bframes=3 b_pyramid=2 b_adapt=2 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=1 scenecut=60 intra_refresh=0 rc_lookahead=60 rc=crf mbtree=1 crf=23.5000 qcomp=0.50 qpmin=0:0:0 qpmax=69:69:69 qpstep=4 ip_ratio=1.40 aq=2:0.80 aq-sensitivity=10.00 aq-factor=1.00:1.00:1.00 aq2=0 aq3=0
+x264 [info]: started at Thu Aug 11 21:42:47 2016
+                                                                                                                       
+x264 [info]: frame I:1     Avg QP:22.89  size:  5820
+x264 [info]: frame P:3     Avg QP:26.09  size:  3305
+x264 [info]: frame B:6     Avg QP:27.40  size:  1975
+x264 [info]: consecutive B-frames: 20.0%  0.0%  0.0% 80.0%
+x264 [info]: mb I  I16..4: 61.7% 31.7%  6.5%
+x264 [info]: mb P  I16..4:  1.0% 14.0%  2.1%  P16..4: 13.3%  6.0%  2.2%  0.3%  0.0%    skip:61.1%
+x264 [info]: mb B  I16..4:  0.0%  1.4%  0.7%  B16..8: 15.8%  5.8%  1.9%  direct: 3.4%  skip:71.0%  L0:18.8% L1:24.3% BI:56.9%
+x264 [info]: 8x8 transform intra:50.0% inter:70.2%
+x264 [info]: direct mvs  spatial:33.3% temporal:66.7%
+x264 [info]: coded y,uvDC,uvAC intra: 51.6% 41.4% 18.2% inter: 13.1% 3.1% 0.1%
+x264 [info]: i16 v,h,dc,p:  9% 75%  3% 13%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 12% 32%  8%  3%  5%  2% 16%  3% 19%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu:  8% 30%  8%  3%  5%  3% 19%  3% 22%
+x264 [info]: i8c dc,h,v,p: 28% 46%  9% 17%
+x264 [info]: Weighted P-Frames: Y:66.7% UV:0.0%
+x264 [info]: ref P L0: 85.8%  9.3%  3.6%  1.3%
+x264 [info]: ref B L0: 99.0%  0.6%  0.4%
+x264 [info]: ref B L1: 99.3%  0.7%
+x264 [info]: kb/s:551.76
+                                                        
+encoded 10 frames, 33.90 fps, 568.86 kb/s, 27.78 KB
+x264 [info]: ended at Thu Aug 11 21:42:47 2016
+x264 [info]: encoding duration 0:00:00
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\mp4box.exe" -add "D:\仙儿姐_vtemp.mp4#trackID=1:name=" -add "D:\仙儿姐_atemp.mp4#trackID=1:name=" -new "D:\仙儿姐_x264.mp4" 
+IsoMedia import 仙儿姐_vtemp.mp4 - track ID 1 - Video (size 480 x 360)
+Importing ISO File: |==                  | (10/100)
+Importing ISO File: |====                | (20/100)
+Importing ISO File: |======              | (30/100)
+Importing ISO File: |========            | (40/100)
+Importing ISO File: |==========          | (50/100)
+Importing ISO File: |============        | (60/100)
+Importing ISO File: |==============      | (70/100)
+Importing ISO File: |================    | (80/100)
+Importing ISO File: |==================  | (90/100)
+                                                          
+IsoMedia import 仙儿姐_atemp.mp4 - track ID 1 - Audio (SR 48000 - 2 channels)
+Importing ISO File: |                    | (01/100)
+Importing ISO File: |                    | (02/100)
+Importing ISO File: |                    | (03/100)
+Importing ISO File: |                    | (04/100)
+Importing ISO File: |=                   | (05/100)
+Importing ISO File: |=                   | (06/100)
+Importing ISO File: |=                   | (07/100)
+Importing ISO File: |=                   | (08/100)
+Importing ISO File: |=                   | (09/100)
+Importing ISO File: |==                  | (10/100)
+Importing ISO File: |==                  | (11/100)
+Importing ISO File: |==                  | (12/100)
+Importing ISO File: |==                  | (13/100)
+Importing ISO File: |==                  | (14/100)
+Importing ISO File: |===                 | (15/100)
+Importing ISO File: |===                 | (16/100)
+Importing ISO File: |===                 | (17/100)
+Importing ISO File: |===                 | (18/100)
+Importing ISO File: |===                 | (19/100)
+Importing ISO File: |====                | (20/100)
+Importing ISO File: |====                | (21/100)
+Importing ISO File: |====                | (22/100)
+Importing ISO File: |====                | (23/100)
+Importing ISO File: |====                | (24/100)
+Importing ISO File: |=====               | (25/100)
+Importing ISO File: |=====               | (26/100)
+Importing ISO File: |=====               | (27/100)
+Importing ISO File: |=====               | (28/100)
+Importing ISO File: |=====               | (29/100)
+Importing ISO File: |======              | (30/100)
+Importing ISO File: |======              | (31/100)
+Importing ISO File: |======              | (32/100)
+Importing ISO File: |======              | (33/100)
+Importing ISO File: |======              | (34/100)
+Importing ISO File: |=======             | (35/100)
+Importing ISO File: |=======             | (36/100)
+Importing ISO File: |=======             | (37/100)
+Importing ISO File: |=======             | (38/100)
+Importing ISO File: |=======             | (39/100)
+Importing ISO File: |========            | (40/100)
+Importing ISO File: |========            | (41/100)
+Importing ISO File: |========            | (42/100)
+Importing ISO File: |========            | (43/100)
+Importing ISO File: |========            | (44/100)
+Importing ISO File: |=========           | (45/100)
+Importing ISO File: |=========           | (46/100)
+Importing ISO File: |=========           | (47/100)
+Importing ISO File: |=========           | (48/100)
+Importing ISO File: |=========           | (49/100)
+Importing ISO File: |==========          | (50/100)
+Importing ISO File: |==========          | (51/100)
+Importing ISO File: |==========          | (52/100)
+Importing ISO File: |==========          | (53/100)
+Importing ISO File: |==========          | (54/100)
+Importing ISO File: |===========         | (55/100)
+Importing ISO File: |===========         | (56/100)
+Importing ISO File: |===========         | (57/100)
+Importing ISO File: |===========         | (58/100)
+Importing ISO File: |===========         | (59/100)
+Importing ISO File: |============        | (60/100)
+Importing ISO File: |============        | (61/100)
+Importing ISO File: |============        | (62/100)
+Importing ISO File: |============        | (63/100)
+Importing ISO File: |============        | (64/100)
+Importing ISO File: |=============       | (65/100)
+Importing ISO File: |=============       | (66/100)
+Importing ISO File: |=============       | (67/100)
+Importing ISO File: |=============       | (68/100)
+Importing ISO File: |=============       | (69/100)
+Importing ISO File: |==============      | (70/100)
+Importing ISO File: |==============      | (71/100)
+Importing ISO File: |==============      | (72/100)
+Importing ISO File: |==============      | (73/100)
+Importing ISO File: |==============      | (74/100)
+Importing ISO File: |===============     | (75/100)
+Importing ISO File: |===============     | (76/100)
+Importing ISO File: |===============     | (77/100)
+Importing ISO File: |===============     | (78/100)
+Importing ISO File: |===============     | (79/100)
+Importing ISO File: |================    | (80/100)
+Importing ISO File: |================    | (81/100)
+Importing ISO File: |================    | (82/100)
+Importing ISO File: |================    | (83/100)
+Importing ISO File: |================    | (84/100)
+Importing ISO File: |=================   | (85/100)
+Importing ISO File: |=================   | (86/100)
+Importing ISO File: |=================   | (87/100)
+Importing ISO File: |=================   | (88/100)
+Importing ISO File: |=================   | (89/100)
+Importing ISO File: |==================  | (90/100)
+Importing ISO File: |==================  | (91/100)
+Importing ISO File: |==================  | (92/100)
+Importing ISO File: |==================  | (93/100)
+Importing ISO File: |==================  | (94/100)
+Importing ISO File: |=================== | (95/100)
+Importing ISO File: |=================== | (96/100)
+Importing ISO File: |=================== | (97/100)
+Importing ISO File: |=================== | (98/100)
+Importing ISO File: |=================== | (99/100)
+                                                          
+Saving D:\仙儿姐_x264.mp4: 0.500 secs Interleaving
+ISO File Writing: |                    | (01/100)
+ISO File Writing: |                    | (02/100)
+ISO File Writing: |                    | (03/100)
+ISO File Writing: |                    | (04/100)
+ISO File Writing: |=                   | (05/100)
+ISO File Writing: |=                   | (06/100)
+ISO File Writing: |=                   | (07/100)
+ISO File Writing: |=                   | (08/100)
+ISO File Writing: |=                   | (09/100)
+ISO File Writing: |==                  | (10/100)
+ISO File Writing: |==                  | (11/100)
+ISO File Writing: |==                  | (12/100)
+ISO File Writing: |==                  | (13/100)
+ISO File Writing: |==                  | (14/100)
+ISO File Writing: |===                 | (15/100)
+ISO File Writing: |===                 | (16/100)
+ISO File Writing: |===                 | (17/100)
+ISO File Writing: |===                 | (18/100)
+ISO File Writing: |===                 | (19/100)
+ISO File Writing: |====                | (20/100)
+ISO File Writing: |====                | (21/100)
+ISO File Writing: |====                | (22/100)
+ISO File Writing: |====                | (23/100)
+ISO File Writing: |====                | (24/100)
+ISO File Writing: |=====               | (25/100)
+ISO File Writing: |=====               | (26/100)
+ISO File Writing: |=====               | (27/100)
+ISO File Writing: |=====               | (28/100)
+ISO File Writing: |=====               | (29/100)
+ISO File Writing: |======              | (30/100)
+ISO File Writing: |======              | (31/100)
+ISO File Writing: |======              | (32/100)
+ISO File Writing: |======              | (33/100)
+ISO File Writing: |======              | (34/100)
+ISO File Writing: |=======             | (35/100)
+ISO File Writing: |=======             | (36/100)
+ISO File Writing: |=======             | (37/100)
+ISO File Writing: |=======             | (38/100)
+ISO File Writing: |=======             | (39/100)
+ISO File Writing: |========            | (40/100)
+ISO File Writing: |========            | (41/100)
+ISO File Writing: |========            | (42/100)
+ISO File Writing: |========            | (43/100)
+ISO File Writing: |========            | (44/100)
+ISO File Writing: |=========           | (45/100)
+ISO File Writing: |=========           | (46/100)
+ISO File Writing: |=========           | (47/100)
+ISO File Writing: |=========           | (48/100)
+ISO File Writing: |=========           | (49/100)
+ISO File Writing: |==========          | (50/100)
+ISO File Writing: |==========          | (51/100)
+ISO File Writing: |==========          | (52/100)
+ISO File Writing: |==========          | (53/100)
+ISO File Writing: |==========          | (54/100)
+ISO File Writing: |===========         | (55/100)
+ISO File Writing: |===========         | (56/100)
+ISO File Writing: |===========         | (57/100)
+ISO File Writing: |===========         | (58/100)
+ISO File Writing: |===========         | (59/100)
+ISO File Writing: |============        | (60/100)
+ISO File Writing: |============        | (61/100)
+ISO File Writing: |============        | (62/100)
+ISO File Writing: |============        | (63/100)
+ISO File Writing: |============        | (64/100)
+ISO File Writing: |=============       | (65/100)
+ISO File Writing: |=============       | (66/100)
+ISO File Writing: |=============       | (67/100)
+ISO File Writing: |=============       | (68/100)
+ISO File Writing: |=============       | (69/100)
+ISO File Writing: |==============      | (70/100)
+ISO File Writing: |==============      | (71/100)
+ISO File Writing: |==============      | (72/100)
+ISO File Writing: |==============      | (73/100)
+ISO File Writing: |==============      | (74/100)
+ISO File Writing: |===============     | (75/100)
+ISO File Writing: |===============     | (76/100)
+ISO File Writing: |===============     | (77/100)
+ISO File Writing: |===============     | (78/100)
+ISO File Writing: |===============     | (79/100)
+ISO File Writing: |================    | (80/100)
+ISO File Writing: |================    | (81/100)
+ISO File Writing: |================    | (82/100)
+ISO File Writing: |================    | (83/100)
+ISO File Writing: |================    | (84/100)
+ISO File Writing: |=================   | (85/100)
+ISO File Writing: |=================   | (86/100)
+ISO File Writing: |=================   | (87/100)
+ISO File Writing: |=================   | (88/100)
+ISO File Writing: |=================   | (89/100)
+ISO File Writing: |==================  | (90/100)
+ISO File Writing: |==================  | (91/100)
+ISO File Writing: |==================  | (92/100)
+ISO File Writing: |==================  | (93/100)
+ISO File Writing: |==================  | (94/100)
+ISO File Writing: |=================== | (95/100)
+ISO File Writing: |=================== | (96/100)
+ISO File Writing: |=================== | (97/100)
+ISO File Writing: |=================== | (98/100)
+ISO File Writing: |=================== | (99/100)
+                                                        
+D:\小丸工具箱v194\小丸工具箱rev194>del "D:\仙儿姐_vtemp.mp4" 
+D:\小丸工具箱v194\小丸工具箱rev194>del "D:\仙儿姐_atemp.mp4" 
+D:\小丸工具箱v194\小丸工具箱rev194>echo ===== one file is completed! ===== 
+===== one file is completed! =====
+
+
+===========2016/8/11 21:43:24===========
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\ffmpeg.exe" -i "D:\仙儿姐.mp4" -vn -sn -v 0 -c:a pcm_s16le -f wav pipe:|"D:\小丸工具箱v194\小丸工具箱rev194\tools\neroAacEnc.exe" -ignorelength -lc -br 96000 -if - -of "D:\仙儿姐_atemp.mp4"
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\x264_64-8bit.exe" --crf 23.5 --demuxer ffms --threads auto --preset 8  -I 250 -r 4 -b 3 --me umh -i 1 --scenecut 60 -f 1:1 --qcomp 0.5 --psy-rd 0.3:0 --aq-mode 2 --aq-strength 0.8 --vf resize:480,360,,,,lanczos --frames 5 -o "D:\仙儿姐_vtemp.mp4" "D:\仙儿姐.mp4"
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\mp4box.exe" -add "D:\仙儿姐_vtemp.mp4#trackID=1:name=" -add "D:\仙儿姐_atemp.mp4#trackID=1:name=" -new "D:\仙儿姐_x264.mp4"
+
+del "D:\仙儿姐_vtemp.mp4"
+del "D:\仙儿姐_atemp.mp4"
+
+echo ===== one file is completed! =====
+
+
+===========2016/8/11 21:43:26===========
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\ffmpeg.exe" -i "D:\仙儿姐.mp4" -vn -sn -v 0 -c:a pcm_s16le -f wav pipe:  | "D:\小丸工具箱v194\小丸工具箱rev194\tools\neroAacEnc.exe" -ignorelength -lc -br 96000 -if - -of "D:\仙儿姐_atemp.mp4" 
+*************************************************************
+*                                                           *
+*  Nero AAC Encoder                                         *
+*  Copyright 2009 Nero AG                                   *
+*  All Rights Reserved Worldwide                            *
+*                                                           *
+*  Package build date: Feb 18 2010                          *
+*  Package version:    1.5.4.0                              *
+*                                                           *
+*  See -help for a complete list of available parameters.   *
+*                                                           *
+*************************************************************
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\x264_64-8bit.exe" --crf 23.5 --demuxer ffms --threads auto --preset 8  -I 250 -r 4 -b 3 --me umh -i 1 --scenecut 60 -f 1:1 --qcomp 0.5 --psy-rd 0.3:0 --aq-mode 2 --aq-strength 0.8 --vf resize:480,360,,,,lanczos --frames 5 -o "D:\仙儿姐_vtemp.mp4" "D:\仙儿姐.mp4" 
+[info]: indexing input file [7.2%]  
+                                            
+ffms [info]: 
+ Format    : mov,mp4,m4a,3gp,3g2,mj2
+ Codec     : h264
+ PixFmt    : yuv420p
+ Framerate : 25/1
+ Timebase  : 1000/25000000
+ Duration  : 0:00:14
+ffms [info]: 1920x1080p 1:1 @ 25/1 fps (vfr)
+ffms [info]: color matrix: bt709
+resize [info]: resizing to 480x360
+x264 [info]: using SAR=4/3
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+x264 [info]: AVC Encoder x264 core 148 r2597+52 4ed4a81 xiaowan [8-bit@all X86_64]
+x264 [info]: profile: High, level: 2.1, subsampling: 4:2:0, bit-depth: 8-bit
+x264 [info]: cabac=1 ref=4 deblock=1:1:1 analyse=0x3:0x133 me=umh subme=10 psy=1 fade_compensate=0.00 psy_rd=0.30:0.00 mixed_ref=1 me_range=24 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=11 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 fgo=0 bframes=3 b_pyramid=2 b_adapt=2 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=1 scenecut=60 intra_refresh=0 rc_lookahead=60 rc=crf mbtree=1 crf=23.5000 qcomp=0.50 qpmin=0:0:0 qpmax=69:69:69 qpstep=4 ip_ratio=1.40 aq=2:0.80 aq-sensitivity=10.00 aq-factor=1.00:1.00:1.00 aq2=0 aq3=0
+x264 [info]: started at Thu Aug 11 21:43:25 2016
+                                                                                                                       
+x264 [info]: frame I:1     Avg QP:24.68  size:  5587
+x264 [info]: frame P:1     Avg QP:28.16  size:  3648
+x264 [info]: frame B:3     Avg QP:27.46  size:  2131
+x264 [info]: consecutive B-frames: 20.0%  0.0%  0.0% 80.0%
+x264 [info]: mb I  I16..4: 48.8% 46.2%  4.9%
+x264 [info]: mb P  I16..4:  0.6% 18.6%  4.8%  P16..4: 12.6%  3.9%  0.5%  0.1%  0.0%    skip:59.0%
+x264 [info]: mb B  I16..4:  0.0%  1.6%  0.3%  B16..8: 15.0%  6.8%  0.9%  direct: 3.3%  skip:72.0%  L0: 9.6% L1:24.0% BI:66.3%
+x264 [info]: 8x8 transform intra:53.7% inter:70.1%
+x264 [info]: direct mvs  spatial:33.3% temporal:66.7%
+x264 [info]: coded y,uvDC,uvAC intra: 43.9% 40.6% 15.1% inter: 13.2% 2.7% 0.1%
+x264 [info]: i16 v,h,dc,p: 10% 70%  1% 18%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  9% 43% 12%  2%  3%  1% 11%  2% 16%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu:  4% 36%  3%  3%  5%  3% 18%  3% 25%
+x264 [info]: i8c dc,h,v,p: 23% 58%  7% 12%
+x264 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x264 [info]: ref B L1: 99.7%  0.3%
+x264 [info]: kb/s:625.08
+                                                        
+encoded 5 frames, 31.25 fps, 659.28 kb/s, 16.10 KB
+x264 [info]: ended at Thu Aug 11 21:43:25 2016
+x264 [info]: encoding duration 0:00:00
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\mp4box.exe" -add "D:\仙儿姐_vtemp.mp4#trackID=1:name=" -add "D:\仙儿姐_atemp.mp4#trackID=1:name=" -new "D:\仙儿姐_x264.mp4" 
+IsoMedia import 仙儿姐_vtemp.mp4 - track ID 1 - Video (size 480 x 360)
+Importing ISO File: |====                | (20/100)
+Importing ISO File: |========            | (40/100)
+Importing ISO File: |============        | (60/100)
+Importing ISO File: |================    | (80/100)
+                                                          
+IsoMedia import 仙儿姐_atemp.mp4 - track ID 1 - Audio (SR 48000 - 2 channels)
+Importing ISO File: |                    | (01/100)
+Importing ISO File: |                    | (02/100)
+Importing ISO File: |                    | (03/100)
+Importing ISO File: |                    | (04/100)
+Importing ISO File: |=                   | (05/100)
+Importing ISO File: |=                   | (06/100)
+Importing ISO File: |=                   | (07/100)
+Importing ISO File: |=                   | (08/100)
+Importing ISO File: |=                   | (09/100)
+Importing ISO File: |==                  | (10/100)
+Importing ISO File: |==                  | (11/100)
+Importing ISO File: |==                  | (12/100)
+Importing ISO File: |==                  | (13/100)
+Importing ISO File: |==                  | (14/100)
+Importing ISO File: |===                 | (15/100)
+Importing ISO File: |===                 | (16/100)
+Importing ISO File: |===                 | (17/100)
+Importing ISO File: |===                 | (18/100)
+Importing ISO File: |===                 | (19/100)
+Importing ISO File: |====                | (20/100)
+Importing ISO File: |====                | (21/100)
+Importing ISO File: |====                | (22/100)
+Importing ISO File: |====                | (23/100)
+Importing ISO File: |====                | (24/100)
+Importing ISO File: |=====               | (25/100)
+Importing ISO File: |=====               | (26/100)
+Importing ISO File: |=====               | (27/100)
+Importing ISO File: |=====               | (28/100)
+Importing ISO File: |=====               | (29/100)
+Importing ISO File: |======              | (30/100)
+Importing ISO File: |======              | (31/100)
+Importing ISO File: |======              | (32/100)
+Importing ISO File: |======              | (33/100)
+Importing ISO File: |======              | (34/100)
+Importing ISO File: |=======             | (35/100)
+Importing ISO File: |=======             | (36/100)
+Importing ISO File: |=======             | (37/100)
+Importing ISO File: |=======             | (38/100)
+Importing ISO File: |=======             | (39/100)
+Importing ISO File: |========            | (40/100)
+Importing ISO File: |========            | (41/100)
+Importing ISO File: |========            | (42/100)
+Importing ISO File: |========            | (43/100)
+Importing ISO File: |========            | (44/100)
+Importing ISO File: |=========           | (45/100)
+Importing ISO File: |=========           | (46/100)
+Importing ISO File: |=========           | (47/100)
+Importing ISO File: |=========           | (48/100)
+Importing ISO File: |=========           | (49/100)
+Importing ISO File: |==========          | (50/100)
+Importing ISO File: |==========          | (51/100)
+Importing ISO File: |==========          | (52/100)
+Importing ISO File: |==========          | (53/100)
+Importing ISO File: |==========          | (54/100)
+Importing ISO File: |===========         | (55/100)
+Importing ISO File: |===========         | (56/100)
+Importing ISO File: |===========         | (57/100)
+Importing ISO File: |===========         | (58/100)
+Importing ISO File: |===========         | (59/100)
+Importing ISO File: |============        | (60/100)
+Importing ISO File: |============        | (61/100)
+Importing ISO File: |============        | (62/100)
+Importing ISO File: |============        | (63/100)
+Importing ISO File: |============        | (64/100)
+Importing ISO File: |=============       | (65/100)
+Importing ISO File: |=============       | (66/100)
+Importing ISO File: |=============       | (67/100)
+Importing ISO File: |=============       | (68/100)
+Importing ISO File: |=============       | (69/100)
+Importing ISO File: |==============      | (70/100)
+Importing ISO File: |==============      | (71/100)
+Importing ISO File: |==============      | (72/100)
+Importing ISO File: |==============      | (73/100)
+Importing ISO File: |==============      | (74/100)
+Importing ISO File: |===============     | (75/100)
+Importing ISO File: |===============     | (76/100)
+Importing ISO File: |===============     | (77/100)
+Importing ISO File: |===============     | (78/100)
+Importing ISO File: |===============     | (79/100)
+Importing ISO File: |================    | (80/100)
+Importing ISO File: |================    | (81/100)
+Importing ISO File: |================    | (82/100)
+Importing ISO File: |================    | (83/100)
+Importing ISO File: |================    | (84/100)
+Importing ISO File: |=================   | (85/100)
+Importing ISO File: |=================   | (86/100)
+Importing ISO File: |=================   | (87/100)
+Importing ISO File: |=================   | (88/100)
+Importing ISO File: |=================   | (89/100)
+Importing ISO File: |==================  | (90/100)
+Importing ISO File: |==================  | (91/100)
+Importing ISO File: |==================  | (92/100)
+Importing ISO File: |==================  | (93/100)
+Importing ISO File: |==================  | (94/100)
+Importing ISO File: |=================== | (95/100)
+Importing ISO File: |=================== | (96/100)
+Importing ISO File: |=================== | (97/100)
+Importing ISO File: |=================== | (98/100)
+Importing ISO File: |=================== | (99/100)
+                                                          
+Saving D:\仙儿姐_x264.mp4: 0.500 secs Interleaving
+ISO File Writing: |                    | (01/100)
+ISO File Writing: |                    | (02/100)
+ISO File Writing: |                    | (03/100)
+ISO File Writing: |                    | (04/100)
+ISO File Writing: |=                   | (05/100)
+ISO File Writing: |=                   | (06/100)
+ISO File Writing: |=                   | (07/100)
+ISO File Writing: |=                   | (08/100)
+ISO File Writing: |=                   | (09/100)
+ISO File Writing: |==                  | (10/100)
+ISO File Writing: |==                  | (11/100)
+ISO File Writing: |==                  | (12/100)
+ISO File Writing: |==                  | (13/100)
+ISO File Writing: |==                  | (14/100)
+ISO File Writing: |===                 | (15/100)
+ISO File Writing: |===                 | (16/100)
+ISO File Writing: |===                 | (17/100)
+ISO File Writing: |===                 | (18/100)
+ISO File Writing: |===                 | (19/100)
+ISO File Writing: |====                | (20/100)
+ISO File Writing: |====                | (21/100)
+ISO File Writing: |====                | (22/100)
+ISO File Writing: |====                | (23/100)
+ISO File Writing: |====                | (24/100)
+ISO File Writing: |=====               | (25/100)
+ISO File Writing: |=====               | (26/100)
+ISO File Writing: |=====               | (27/100)
+ISO File Writing: |=====               | (28/100)
+ISO File Writing: |=====               | (29/100)
+ISO File Writing: |======              | (30/100)
+ISO File Writing: |======              | (31/100)
+ISO File Writing: |======              | (32/100)
+ISO File Writing: |======              | (33/100)
+ISO File Writing: |======              | (34/100)
+ISO File Writing: |=======             | (35/100)
+ISO File Writing: |=======             | (36/100)
+ISO File Writing: |=======             | (37/100)
+ISO File Writing: |=======             | (38/100)
+ISO File Writing: |=======             | (39/100)
+ISO File Writing: |========            | (40/100)
+ISO File Writing: |========            | (41/100)
+ISO File Writing: |========            | (42/100)
+ISO File Writing: |========            | (43/100)
+ISO File Writing: |========            | (44/100)
+ISO File Writing: |=========           | (45/100)
+ISO File Writing: |=========           | (46/100)
+ISO File Writing: |=========           | (47/100)
+ISO File Writing: |=========           | (48/100)
+ISO File Writing: |=========           | (49/100)
+ISO File Writing: |==========          | (50/100)
+ISO File Writing: |==========          | (51/100)
+ISO File Writing: |==========          | (52/100)
+ISO File Writing: |==========          | (53/100)
+ISO File Writing: |==========          | (54/100)
+ISO File Writing: |===========         | (55/100)
+ISO File Writing: |===========         | (56/100)
+ISO File Writing: |===========         | (57/100)
+ISO File Writing: |===========         | (58/100)
+ISO File Writing: |===========         | (59/100)
+ISO File Writing: |============        | (60/100)
+ISO File Writing: |============        | (61/100)
+ISO File Writing: |============        | (62/100)
+ISO File Writing: |============        | (63/100)
+ISO File Writing: |============        | (64/100)
+ISO File Writing: |=============       | (65/100)
+ISO File Writing: |=============       | (66/100)
+ISO File Writing: |=============       | (67/100)
+ISO File Writing: |=============       | (68/100)
+ISO File Writing: |=============       | (69/100)
+ISO File Writing: |==============      | (70/100)
+ISO File Writing: |==============      | (71/100)
+ISO File Writing: |==============      | (72/100)
+ISO File Writing: |==============      | (73/100)
+ISO File Writing: |==============      | (74/100)
+ISO File Writing: |===============     | (75/100)
+ISO File Writing: |===============     | (76/100)
+ISO File Writing: |===============     | (77/100)
+ISO File Writing: |===============     | (78/100)
+ISO File Writing: |===============     | (79/100)
+ISO File Writing: |================    | (80/100)
+ISO File Writing: |================    | (81/100)
+ISO File Writing: |================    | (82/100)
+ISO File Writing: |================    | (83/100)
+ISO File Writing: |================    | (84/100)
+ISO File Writing: |=================   | (85/100)
+ISO File Writing: |=================   | (86/100)
+ISO File Writing: |=================   | (87/100)
+ISO File Writing: |=================   | (88/100)
+ISO File Writing: |=================   | (89/100)
+ISO File Writing: |==================  | (90/100)
+ISO File Writing: |==================  | (91/100)
+ISO File Writing: |==================  | (92/100)
+ISO File Writing: |==================  | (93/100)
+ISO File Writing: |==================  | (94/100)
+ISO File Writing: |=================== | (95/100)
+ISO File Writing: |=================== | (96/100)
+ISO File Writing: |=================== | (97/100)
+ISO File Writing: |=================== | (98/100)
+ISO File Writing: |=================== | (99/100)
+                                                        
+D:\小丸工具箱v194\小丸工具箱rev194>del "D:\仙儿姐_vtemp.mp4" 
+D:\小丸工具箱v194\小丸工具箱rev194>del "D:\仙儿姐_atemp.mp4" 
+D:\小丸工具箱v194\小丸工具箱rev194>echo ===== one file is completed! ===== 
+===== one file is completed! =====
+
+
+===========2016/8/11 21:43:51===========
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\ffmpeg.exe" -i "D:\仙儿姐.mp4" -vn -sn -v 0 -c:a pcm_s16le -f wav pipe:|"D:\小丸工具箱v194\小丸工具箱rev194\tools\neroAacEnc.exe" -ignorelength -lc -br 96000 -if - -of "D:\仙儿姐_atemp.mp4"
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\x264_64-8bit.exe" --crf 23.5 --demuxer lavf --threads auto --preset 8  -I 250 -r 4 -b 3 --me umh -i 1 --scenecut 60 -f 1:1 --qcomp 0.5 --psy-rd 0.3:0 --aq-mode 2 --aq-strength 0.8 --vf resize:480,360,,,,lanczos --frames 5 -o "D:\仙儿姐_vtemp.mp4" "D:\仙儿姐.mp4"
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\mp4box.exe" -add "D:\仙儿姐_vtemp.mp4#trackID=1:name=" -add "D:\仙儿姐_atemp.mp4#trackID=1:name=" -new "D:\仙儿姐_x264.mp4"
+
+del "D:\仙儿姐_vtemp.mp4"
+del "D:\仙儿姐_atemp.mp4"
+
+echo ===== one file is completed! =====
+
+
+===========2016/8/11 21:43:53===========
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\ffmpeg.exe" -i "D:\仙儿姐.mp4" -vn -sn -v 0 -c:a pcm_s16le -f wav pipe:  | "D:\小丸工具箱v194\小丸工具箱rev194\tools\neroAacEnc.exe" -ignorelength -lc -br 96000 -if - -of "D:\仙儿姐_atemp.mp4" 
+*************************************************************
+*                                                           *
+*  Nero AAC Encoder                                         *
+*  Copyright 2009 Nero AG                                   *
+*  All Rights Reserved Worldwide                            *
+*                                                           *
+*  Package build date: Feb 18 2010                          *
+*  Package version:    1.5.4.0                              *
+*                                                           *
+*  See -help for a complete list of available parameters.   *
+*                                                           *
+*************************************************************
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\x264_64-8bit.exe" --crf 23.5 --demuxer lavf --threads auto --preset 8  -I 250 -r 4 -b 3 --me umh -i 1 --scenecut 60 -f 1:1 --qcomp 0.5 --psy-rd 0.3:0 --aq-mode 2 --aq-strength 0.8 --vf resize:480,360,,,,lanczos --frames 5 -o "D:\仙儿姐_vtemp.mp4" "D:\仙儿姐.mp4" 
+lavf [info]: 
+ Format    : mov,mp4,m4a,3gp,3g2,mj2
+ Codec     : h264 ( H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 )
+ PixFmt    : yuv420p
+ Framerate : 25/1
+ Timebase  : 1/25000
+ Duration  : 0:00:14
+lavf [info]: 1920x1080p 1:1 @ 25/1 fps (vfr)
+lavf [info]: color matrix: bt709
+resize [info]: resizing to 480x360
+x264 [info]: using SAR=4/3
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+x264 [info]: AVC Encoder x264 core 148 r2597+52 4ed4a81 xiaowan [8-bit@all X86_64]
+x264 [info]: profile: High, level: 2.1, subsampling: 4:2:0, bit-depth: 8-bit
+x264 [info]: cabac=1 ref=4 deblock=1:1:1 analyse=0x3:0x133 me=umh subme=10 psy=1 fade_compensate=0.00 psy_rd=0.30:0.00 mixed_ref=1 me_range=24 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=11 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 fgo=0 bframes=3 b_pyramid=2 b_adapt=2 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=1 scenecut=60 intra_refresh=0 rc_lookahead=60 rc=crf mbtree=1 crf=23.5000 qcomp=0.50 qpmin=0:0:0 qpmax=69:69:69 qpstep=4 ip_ratio=1.40 aq=2:0.80 aq-sensitivity=10.00 aq-factor=1.00:1.00:1.00 aq2=0 aq3=0
+x264 [info]: started at Thu Aug 11 21:43:52 2016
+                                                                                                                       
+x264 [info]: frame I:1     Avg QP:24.68  size:  5587
+x264 [info]: frame P:1     Avg QP:28.16  size:  3648
+x264 [info]: frame B:3     Avg QP:27.46  size:  2131
+x264 [info]: consecutive B-frames: 20.0%  0.0%  0.0% 80.0%
+x264 [info]: mb I  I16..4: 48.8% 46.2%  4.9%
+x264 [info]: mb P  I16..4:  0.6% 18.6%  4.8%  P16..4: 12.6%  3.9%  0.5%  0.1%  0.0%    skip:59.0%
+x264 [info]: mb B  I16..4:  0.0%  1.6%  0.3%  B16..8: 15.0%  6.8%  0.9%  direct: 3.3%  skip:72.0%  L0: 9.6% L1:24.0% BI:66.3%
+x264 [info]: 8x8 transform intra:53.7% inter:70.1%
+x264 [info]: direct mvs  spatial:33.3% temporal:66.7%
+x264 [info]: coded y,uvDC,uvAC intra: 43.9% 40.6% 15.1% inter: 13.2% 2.7% 0.1%
+x264 [info]: i16 v,h,dc,p: 10% 70%  1% 18%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  9% 43% 12%  2%  3%  1% 11%  2% 16%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu:  4% 36%  3%  3%  5%  3% 18%  3% 25%
+x264 [info]: i8c dc,h,v,p: 23% 58%  7% 12%
+x264 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x264 [info]: ref B L1: 99.7%  0.3%
+x264 [info]: kb/s:625.08
+                                                        
+encoded 5 frames, 37.31 fps, 659.28 kb/s, 16.10 KB
+x264 [info]: ended at Thu Aug 11 21:43:52 2016
+x264 [info]: encoding duration 0:00:00
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\mp4box.exe" -add "D:\仙儿姐_vtemp.mp4#trackID=1:name=" -add "D:\仙儿姐_atemp.mp4#trackID=1:name=" -new "D:\仙儿姐_x264.mp4" 
+IsoMedia import 仙儿姐_vtemp.mp4 - track ID 1 - Video (size 480 x 360)
+Importing ISO File: |====                | (20/100)
+Importing ISO File: |========            | (40/100)
+Importing ISO File: |============        | (60/100)
+Importing ISO File: |================    | (80/100)
+                                                          
+IsoMedia import 仙儿姐_atemp.mp4 - track ID 1 - Audio (SR 48000 - 2 channels)
+Importing ISO File: |                    | (01/100)
+Importing ISO File: |                    | (02/100)
+Importing ISO File: |                    | (03/100)
+Importing ISO File: |                    | (04/100)
+Importing ISO File: |=                   | (05/100)
+Importing ISO File: |=                   | (06/100)
+Importing ISO File: |=                   | (07/100)
+Importing ISO File: |=                   | (08/100)
+Importing ISO File: |=                   | (09/100)
+Importing ISO File: |==                  | (10/100)
+Importing ISO File: |==                  | (11/100)
+Importing ISO File: |==                  | (12/100)
+Importing ISO File: |==                  | (13/100)
+Importing ISO File: |==                  | (14/100)
+Importing ISO File: |===                 | (15/100)
+Importing ISO File: |===                 | (16/100)
+Importing ISO File: |===                 | (17/100)
+Importing ISO File: |===                 | (18/100)
+Importing ISO File: |===                 | (19/100)
+Importing ISO File: |====                | (20/100)
+Importing ISO File: |====                | (21/100)
+Importing ISO File: |====                | (22/100)
+Importing ISO File: |====                | (23/100)
+Importing ISO File: |====                | (24/100)
+Importing ISO File: |=====               | (25/100)
+Importing ISO File: |=====               | (26/100)
+Importing ISO File: |=====               | (27/100)
+Importing ISO File: |=====               | (28/100)
+Importing ISO File: |=====               | (29/100)
+Importing ISO File: |======              | (30/100)
+Importing ISO File: |======              | (31/100)
+Importing ISO File: |======              | (32/100)
+Importing ISO File: |======              | (33/100)
+Importing ISO File: |======              | (34/100)
+Importing ISO File: |=======             | (35/100)
+Importing ISO File: |=======             | (36/100)
+Importing ISO File: |=======             | (37/100)
+Importing ISO File: |=======             | (38/100)
+Importing ISO File: |=======             | (39/100)
+Importing ISO File: |========            | (40/100)
+Importing ISO File: |========            | (41/100)
+Importing ISO File: |========            | (42/100)
+Importing ISO File: |========            | (43/100)
+Importing ISO File: |========            | (44/100)
+Importing ISO File: |=========           | (45/100)
+Importing ISO File: |=========           | (46/100)
+Importing ISO File: |=========           | (47/100)
+Importing ISO File: |=========           | (48/100)
+Importing ISO File: |=========           | (49/100)
+Importing ISO File: |==========          | (50/100)
+Importing ISO File: |==========          | (51/100)
+Importing ISO File: |==========          | (52/100)
+Importing ISO File: |==========          | (53/100)
+Importing ISO File: |==========          | (54/100)
+Importing ISO File: |===========         | (55/100)
+Importing ISO File: |===========         | (56/100)
+Importing ISO File: |===========         | (57/100)
+Importing ISO File: |===========         | (58/100)
+Importing ISO File: |===========         | (59/100)
+Importing ISO File: |============        | (60/100)
+Importing ISO File: |============        | (61/100)
+Importing ISO File: |============        | (62/100)
+Importing ISO File: |============        | (63/100)
+Importing ISO File: |============        | (64/100)
+Importing ISO File: |=============       | (65/100)
+Importing ISO File: |=============       | (66/100)
+Importing ISO File: |=============       | (67/100)
+Importing ISO File: |=============       | (68/100)
+Importing ISO File: |=============       | (69/100)
+Importing ISO File: |==============      | (70/100)
+Importing ISO File: |==============      | (71/100)
+Importing ISO File: |==============      | (72/100)
+Importing ISO File: |==============      | (73/100)
+Importing ISO File: |==============      | (74/100)
+Importing ISO File: |===============     | (75/100)
+Importing ISO File: |===============     | (76/100)
+Importing ISO File: |===============     | (77/100)
+Importing ISO File: |===============     | (78/100)
+Importing ISO File: |===============     | (79/100)
+Importing ISO File: |================    | (80/100)
+Importing ISO File: |================    | (81/100)
+Importing ISO File: |================    | (82/100)
+Importing ISO File: |================    | (83/100)
+Importing ISO File: |================    | (84/100)
+Importing ISO File: |=================   | (85/100)
+Importing ISO File: |=================   | (86/100)
+Importing ISO File: |=================   | (87/100)
+Importing ISO File: |=================   | (88/100)
+Importing ISO File: |=================   | (89/100)
+Importing ISO File: |==================  | (90/100)
+Importing ISO File: |==================  | (91/100)
+Importing ISO File: |==================  | (92/100)
+Importing ISO File: |==================  | (93/100)
+Importing ISO File: |==================  | (94/100)
+Importing ISO File: |=================== | (95/100)
+Importing ISO File: |=================== | (96/100)
+Importing ISO File: |=================== | (97/100)
+Importing ISO File: |=================== | (98/100)
+Importing ISO File: |=================== | (99/100)
+                                                          
+Saving D:\仙儿姐_x264.mp4: 0.500 secs Interleaving
+ISO File Writing: |                    | (01/100)
+ISO File Writing: |                    | (02/100)
+ISO File Writing: |                    | (03/100)
+ISO File Writing: |                    | (04/100)
+ISO File Writing: |=                   | (05/100)
+ISO File Writing: |=                   | (06/100)
+ISO File Writing: |=                   | (07/100)
+ISO File Writing: |=                   | (08/100)
+ISO File Writing: |=                   | (09/100)
+ISO File Writing: |==                  | (10/100)
+ISO File Writing: |==                  | (11/100)
+ISO File Writing: |==                  | (12/100)
+ISO File Writing: |==                  | (13/100)
+ISO File Writing: |==                  | (14/100)
+ISO File Writing: |===                 | (15/100)
+ISO File Writing: |===                 | (16/100)
+ISO File Writing: |===                 | (17/100)
+ISO File Writing: |===                 | (18/100)
+ISO File Writing: |===                 | (19/100)
+ISO File Writing: |====                | (20/100)
+ISO File Writing: |====                | (21/100)
+ISO File Writing: |====                | (22/100)
+ISO File Writing: |====                | (23/100)
+ISO File Writing: |====                | (24/100)
+ISO File Writing: |=====               | (25/100)
+ISO File Writing: |=====               | (26/100)
+ISO File Writing: |=====               | (27/100)
+ISO File Writing: |=====               | (28/100)
+ISO File Writing: |=====               | (29/100)
+ISO File Writing: |======              | (30/100)
+ISO File Writing: |======              | (31/100)
+ISO File Writing: |======              | (32/100)
+ISO File Writing: |======              | (33/100)
+ISO File Writing: |======              | (34/100)
+ISO File Writing: |=======             | (35/100)
+ISO File Writing: |=======             | (36/100)
+ISO File Writing: |=======             | (37/100)
+ISO File Writing: |=======             | (38/100)
+ISO File Writing: |=======             | (39/100)
+ISO File Writing: |========            | (40/100)
+ISO File Writing: |========            | (41/100)
+ISO File Writing: |========            | (42/100)
+ISO File Writing: |========            | (43/100)
+ISO File Writing: |========            | (44/100)
+ISO File Writing: |=========           | (45/100)
+ISO File Writing: |=========           | (46/100)
+ISO File Writing: |=========           | (47/100)
+ISO File Writing: |=========           | (48/100)
+ISO File Writing: |=========           | (49/100)
+ISO File Writing: |==========          | (50/100)
+ISO File Writing: |==========          | (51/100)
+ISO File Writing: |==========          | (52/100)
+ISO File Writing: |==========          | (53/100)
+ISO File Writing: |==========          | (54/100)
+ISO File Writing: |===========         | (55/100)
+ISO File Writing: |===========         | (56/100)
+ISO File Writing: |===========         | (57/100)
+ISO File Writing: |===========         | (58/100)
+ISO File Writing: |===========         | (59/100)
+ISO File Writing: |============        | (60/100)
+ISO File Writing: |============        | (61/100)
+ISO File Writing: |============        | (62/100)
+ISO File Writing: |============        | (63/100)
+ISO File Writing: |============        | (64/100)
+ISO File Writing: |=============       | (65/100)
+ISO File Writing: |=============       | (66/100)
+ISO File Writing: |=============       | (67/100)
+ISO File Writing: |=============       | (68/100)
+ISO File Writing: |=============       | (69/100)
+ISO File Writing: |==============      | (70/100)
+ISO File Writing: |==============      | (71/100)
+ISO File Writing: |==============      | (72/100)
+ISO File Writing: |==============      | (73/100)
+ISO File Writing: |==============      | (74/100)
+ISO File Writing: |===============     | (75/100)
+ISO File Writing: |===============     | (76/100)
+ISO File Writing: |===============     | (77/100)
+ISO File Writing: |===============     | (78/100)
+ISO File Writing: |===============     | (79/100)
+ISO File Writing: |================    | (80/100)
+ISO File Writing: |================    | (81/100)
+ISO File Writing: |================    | (82/100)
+ISO File Writing: |================    | (83/100)
+ISO File Writing: |================    | (84/100)
+ISO File Writing: |=================   | (85/100)
+ISO File Writing: |=================   | (86/100)
+ISO File Writing: |=================   | (87/100)
+ISO File Writing: |=================   | (88/100)
+ISO File Writing: |=================   | (89/100)
+ISO File Writing: |==================  | (90/100)
+ISO File Writing: |==================  | (91/100)
+ISO File Writing: |==================  | (92/100)
+ISO File Writing: |==================  | (93/100)
+ISO File Writing: |==================  | (94/100)
+ISO File Writing: |=================== | (95/100)
+ISO File Writing: |=================== | (96/100)
+ISO File Writing: |=================== | (97/100)
+ISO File Writing: |=================== | (98/100)
+ISO File Writing: |=================== | (99/100)
+                                                        
+D:\小丸工具箱v194\小丸工具箱rev194>del "D:\仙儿姐_vtemp.mp4" 
+D:\小丸工具箱v194\小丸工具箱rev194>del "D:\仙儿姐_atemp.mp4" 
+D:\小丸工具箱v194\小丸工具箱rev194>echo ===== one file is completed! ===== 
+===== one file is completed! =====
+
+
+===========2016/8/11 21:44:12===========
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\ffmpeg.exe" -i "D:\仙儿姐.mp4" -vn -sn -v 0 -c:a pcm_s16le -f wav pipe:|"D:\小丸工具箱v194\小丸工具箱rev194\tools\neroAacEnc.exe" -ignorelength -lc -br 96000 -if - -of "D:\仙儿姐_atemp.mp4"
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\x264_64-8bit.exe" --crf 23.5 --demuxer lavf --threads auto --preset 8  -I 250 -r 4 -b 3 --me umh -i 1 --scenecut 60 -f 1:1 --qcomp 0.5 --psy-rd 0.3:0 --aq-mode 2 --aq-strength 0.8 --vf resize:480,360,,,,lanczos -o "D:\仙儿姐_vtemp.mp4" "D:\仙儿姐.mp4"
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\mp4box.exe" -add "D:\仙儿姐_vtemp.mp4#trackID=1:name=" -add "D:\仙儿姐_atemp.mp4#trackID=1:name=" -new "D:\仙儿姐_x264.mp4"
+
+del "D:\仙儿姐_vtemp.mp4"
+del "D:\仙儿姐_atemp.mp4"
+
+echo ===== one file is completed! =====
+
+
+===========2016/8/11 21:44:18===========
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\ffmpeg.exe" -i "D:\仙儿姐.mp4" -vn -sn -v 0 -c:a pcm_s16le -f wav pipe:  | "D:\小丸工具箱v194\小丸工具箱rev194\tools\neroAacEnc.exe" -ignorelength -lc -br 96000 -if - -of "D:\仙儿姐_atemp.mp4" 
+*************************************************************
+*                                                           *
+*  Nero AAC Encoder                                         *
+*  Copyright 2009 Nero AG                                   *
+*  All Rights Reserved Worldwide                            *
+*                                                           *
+*  Package build date: Feb 18 2010                          *
+*  Package version:    1.5.4.0                              *
+*                                                           *
+*  See -help for a complete list of available parameters.   *
+*                                                           *
+*************************************************************
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\x264_64-8bit.exe" --crf 23.5 --demuxer lavf --threads auto --preset 8  -I 250 -r 4 -b 3 --me umh -i 1 --scenecut 60 -f 1:1 --qcomp 0.5 --psy-rd 0.3:0 --aq-mode 2 --aq-strength 0.8 --vf resize:480,360,,,,lanczos -o "D:\仙儿姐_vtemp.mp4" "D:\仙儿姐.mp4" 
+lavf [info]: 
+ Format    : mov,mp4,m4a,3gp,3g2,mj2
+ Codec     : h264 ( H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 )
+ PixFmt    : yuv420p
+ Framerate : 25/1
+ Timebase  : 1/25000
+ Duration  : 0:00:14
+lavf [info]: 1920x1080p 1:1 @ 25/1 fps (vfr)
+lavf [info]: color matrix: bt709
+resize [info]: resizing to 480x360
+x264 [info]: using SAR=4/3
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+x264 [info]: AVC Encoder x264 core 148 r2597+52 4ed4a81 xiaowan [8-bit@all X86_64]
+x264 [info]: profile: High, level: 2.1, subsampling: 4:2:0, bit-depth: 8-bit
+x264 [info]: cabac=1 ref=4 deblock=1:1:1 analyse=0x3:0x133 me=umh subme=10 psy=1 fade_compensate=0.00 psy_rd=0.30:0.00 mixed_ref=1 me_range=24 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=11 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 fgo=0 bframes=3 b_pyramid=2 b_adapt=2 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=1 scenecut=60 intra_refresh=0 rc_lookahead=60 rc=crf mbtree=1 crf=23.5000 qcomp=0.50 qpmin=0:0:0 qpmax=69:69:69 qpstep=4 ip_ratio=1.40 aq=2:0.80 aq-sensitivity=10.00 aq-factor=1.00:1.00:1.00 aq2=0 aq3=0
+x264 [info]: started at Thu Aug 11 21:44:13 2016
+                                                                                                                       
+x264 [info]: frame I:2     Avg QP:21.46  size:  9406
+x264 [info]: frame P:114   Avg QP:24.93  size:  3191
+x264 [info]: frame B:234   Avg QP:28.76  size:  1031
+x264 [info]: consecutive B-frames:  7.1%  3.4% 23.1% 66.3%
+x264 [info]: mb I  I16..4: 47.8% 40.9% 11.3%
+x264 [info]: mb P  I16..4:  8.9%  8.4%  1.2%  P16..4: 25.0%  4.3%  3.7%  0.6%  0.2%    skip:47.8%
+x264 [info]: mb B  I16..4:  0.1%  1.3%  0.2%  B16..8: 11.7%  3.8%  1.3%  direct: 2.2%  skip:79.4%  L0:26.0% L1:46.0% BI:28.0%
+x264 [info]: 8x8 transform intra:50.1% inter:69.2%
+x264 [info]: direct mvs  spatial:97.4% temporal:2.6%
+x264 [info]: coded y,uvDC,uvAC intra: 42.0% 36.9% 13.3% inter: 7.9% 5.9% 1.3%
+x264 [info]: i16 v,h,dc,p: 14% 32%  6% 47%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 21% 12%  4%  7%  6% 11%  6% 14%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 19% 13%  4% 10%  8% 12%  6% 12%
+x264 [info]: i8c dc,h,v,p: 25% 30% 14% 31%
+x264 [info]: Weighted P-Frames: Y:98.2% UV:13.2%
+x264 [info]: ref P L0: 61.5% 10.7% 18.2%  6.6%  2.4%  0.7%
+x264 [info]: ref B L0: 92.8%  5.3%  1.9%
+x264 [info]: ref B L1: 98.2%  1.8%
+x264 [info]: kb/s:356.47
+                                                        
+encoded 350 frames, 91.36 fps, 356.96 kb/s, 610.04 KB
+x264 [info]: ended at Thu Aug 11 21:44:17 2016
+x264 [info]: encoding duration 0:00:04
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\mp4box.exe" -add "D:\仙儿姐_vtemp.mp4#trackID=1:name=" -add "D:\仙儿姐_atemp.mp4#trackID=1:name=" -new "D:\仙儿姐_x264.mp4" 
+IsoMedia import 仙儿姐_vtemp.mp4 - track ID 1 - Video (size 480 x 360)
+Importing ISO File: |                    | (01/100)
+Importing ISO File: |                    | (02/100)
+Importing ISO File: |                    | (03/100)
+Importing ISO File: |                    | (04/100)
+Importing ISO File: |=                   | (05/100)
+Importing ISO File: |=                   | (06/100)
+Importing ISO File: |=                   | (07/100)
+Importing ISO File: |=                   | (08/100)
+Importing ISO File: |=                   | (09/100)
+Importing ISO File: |==                  | (10/100)
+Importing ISO File: |==                  | (11/100)
+Importing ISO File: |==                  | (12/100)
+Importing ISO File: |==                  | (13/100)
+Importing ISO File: |==                  | (14/100)
+Importing ISO File: |===                 | (15/100)
+Importing ISO File: |===                 | (16/100)
+Importing ISO File: |===                 | (17/100)
+Importing ISO File: |===                 | (18/100)
+Importing ISO File: |===                 | (19/100)
+Importing ISO File: |====                | (20/100)
+Importing ISO File: |====                | (21/100)
+Importing ISO File: |====                | (22/100)
+Importing ISO File: |====                | (23/100)
+Importing ISO File: |====                | (24/100)
+Importing ISO File: |=====               | (25/100)
+Importing ISO File: |=====               | (26/100)
+Importing ISO File: |=====               | (27/100)
+Importing ISO File: |=====               | (28/100)
+Importing ISO File: |=====               | (29/100)
+Importing ISO File: |======              | (30/100)
+Importing ISO File: |======              | (31/100)
+Importing ISO File: |======              | (32/100)
+Importing ISO File: |======              | (33/100)
+Importing ISO File: |======              | (34/100)
+Importing ISO File: |=======             | (35/100)
+Importing ISO File: |=======             | (36/100)
+Importing ISO File: |=======             | (37/100)
+Importing ISO File: |=======             | (38/100)
+Importing ISO File: |=======             | (39/100)
+Importing ISO File: |========            | (40/100)
+Importing ISO File: |========            | (41/100)
+Importing ISO File: |========            | (42/100)
+Importing ISO File: |========            | (43/100)
+Importing ISO File: |========            | (44/100)
+Importing ISO File: |=========           | (45/100)
+Importing ISO File: |=========           | (46/100)
+Importing ISO File: |=========           | (47/100)
+Importing ISO File: |=========           | (48/100)
+Importing ISO File: |=========           | (49/100)
+Importing ISO File: |==========          | (50/100)
+Importing ISO File: |==========          | (51/100)
+Importing ISO File: |==========          | (52/100)
+Importing ISO File: |==========          | (53/100)
+Importing ISO File: |==========          | (54/100)
+Importing ISO File: |===========         | (55/100)
+Importing ISO File: |===========         | (56/100)
+Importing ISO File: |===========         | (57/100)
+Importing ISO File: |===========         | (58/100)
+Importing ISO File: |===========         | (59/100)
+Importing ISO File: |============        | (60/100)
+Importing ISO File: |============        | (61/100)
+Importing ISO File: |============        | (62/100)
+Importing ISO File: |============        | (63/100)
+Importing ISO File: |============        | (64/100)
+Importing ISO File: |=============       | (65/100)
+Importing ISO File: |=============       | (66/100)
+Importing ISO File: |=============       | (67/100)
+Importing ISO File: |=============       | (68/100)
+Importing ISO File: |=============       | (69/100)
+Importing ISO File: |==============      | (70/100)
+Importing ISO File: |==============      | (71/100)
+Importing ISO File: |==============      | (72/100)
+Importing ISO File: |==============      | (73/100)
+Importing ISO File: |==============      | (74/100)
+Importing ISO File: |===============     | (75/100)
+Importing ISO File: |===============     | (76/100)
+Importing ISO File: |===============     | (77/100)
+Importing ISO File: |===============     | (78/100)
+Importing ISO File: |===============     | (79/100)
+Importing ISO File: |================    | (80/100)
+Importing ISO File: |================    | (81/100)
+Importing ISO File: |================    | (82/100)
+Importing ISO File: |================    | (83/100)
+Importing ISO File: |================    | (84/100)
+Importing ISO File: |=================   | (85/100)
+Importing ISO File: |=================   | (86/100)
+Importing ISO File: |=================   | (87/100)
+Importing ISO File: |=================   | (88/100)
+Importing ISO File: |=================   | (89/100)
+Importing ISO File: |==================  | (90/100)
+Importing ISO File: |==================  | (91/100)
+Importing ISO File: |==================  | (92/100)
+Importing ISO File: |==================  | (93/100)
+Importing ISO File: |==================  | (94/100)
+Importing ISO File: |=================== | (95/100)
+Importing ISO File: |=================== | (96/100)
+Importing ISO File: |=================== | (97/100)
+Importing ISO File: |=================== | (98/100)
+Importing ISO File: |=================== | (99/100)
+                                                          
+IsoMedia import 仙儿姐_atemp.mp4 - track ID 1 - Audio (SR 48000 - 2 channels)
+Importing ISO File: |                    | (01/100)
+Importing ISO File: |                    | (02/100)
+Importing ISO File: |                    | (03/100)
+Importing ISO File: |                    | (04/100)
+Importing ISO File: |=                   | (05/100)
+Importing ISO File: |=                   | (06/100)
+Importing ISO File: |=                   | (07/100)
+Importing ISO File: |=                   | (08/100)
+Importing ISO File: |=                   | (09/100)
+Importing ISO File: |==                  | (10/100)
+Importing ISO File: |==                  | (11/100)
+Importing ISO File: |==                  | (12/100)
+Importing ISO File: |==                  | (13/100)
+Importing ISO File: |==                  | (14/100)
+Importing ISO File: |===                 | (15/100)
+Importing ISO File: |===                 | (16/100)
+Importing ISO File: |===                 | (17/100)
+Importing ISO File: |===                 | (18/100)
+Importing ISO File: |===                 | (19/100)
+Importing ISO File: |====                | (20/100)
+Importing ISO File: |====                | (21/100)
+Importing ISO File: |====                | (22/100)
+Importing ISO File: |====                | (23/100)
+Importing ISO File: |====                | (24/100)
+Importing ISO File: |=====               | (25/100)
+Importing ISO File: |=====               | (26/100)
+Importing ISO File: |=====               | (27/100)
+Importing ISO File: |=====               | (28/100)
+Importing ISO File: |=====               | (29/100)
+Importing ISO File: |======              | (30/100)
+Importing ISO File: |======              | (31/100)
+Importing ISO File: |======              | (32/100)
+Importing ISO File: |======              | (33/100)
+Importing ISO File: |======              | (34/100)
+Importing ISO File: |=======             | (35/100)
+Importing ISO File: |=======             | (36/100)
+Importing ISO File: |=======             | (37/100)
+Importing ISO File: |=======             | (38/100)
+Importing ISO File: |=======             | (39/100)
+Importing ISO File: |========            | (40/100)
+Importing ISO File: |========            | (41/100)
+Importing ISO File: |========            | (42/100)
+Importing ISO File: |========            | (43/100)
+Importing ISO File: |========            | (44/100)
+Importing ISO File: |=========           | (45/100)
+Importing ISO File: |=========           | (46/100)
+Importing ISO File: |=========           | (47/100)
+Importing ISO File: |=========           | (48/100)
+Importing ISO File: |=========           | (49/100)
+Importing ISO File: |==========          | (50/100)
+Importing ISO File: |==========          | (51/100)
+Importing ISO File: |==========          | (52/100)
+Importing ISO File: |==========          | (53/100)
+Importing ISO File: |==========          | (54/100)
+Importing ISO File: |===========         | (55/100)
+Importing ISO File: |===========         | (56/100)
+Importing ISO File: |===========         | (57/100)
+Importing ISO File: |===========         | (58/100)
+Importing ISO File: |===========         | (59/100)
+Importing ISO File: |============        | (60/100)
+Importing ISO File: |============        | (61/100)
+Importing ISO File: |============        | (62/100)
+Importing ISO File: |============        | (63/100)
+Importing ISO File: |============        | (64/100)
+Importing ISO File: |=============       | (65/100)
+Importing ISO File: |=============       | (66/100)
+Importing ISO File: |=============       | (67/100)
+Importing ISO File: |=============       | (68/100)
+Importing ISO File: |=============       | (69/100)
+Importing ISO File: |==============      | (70/100)
+Importing ISO File: |==============      | (71/100)
+Importing ISO File: |==============      | (72/100)
+Importing ISO File: |==============      | (73/100)
+Importing ISO File: |==============      | (74/100)
+Importing ISO File: |===============     | (75/100)
+Importing ISO File: |===============     | (76/100)
+Importing ISO File: |===============     | (77/100)
+Importing ISO File: |===============     | (78/100)
+Importing ISO File: |===============     | (79/100)
+Importing ISO File: |================    | (80/100)
+Importing ISO File: |================    | (81/100)
+Importing ISO File: |================    | (82/100)
+Importing ISO File: |================    | (83/100)
+Importing ISO File: |================    | (84/100)
+Importing ISO File: |=================   | (85/100)
+Importing ISO File: |=================   | (86/100)
+Importing ISO File: |=================   | (87/100)
+Importing ISO File: |=================   | (88/100)
+Importing ISO File: |=================   | (89/100)
+Importing ISO File: |==================  | (90/100)
+Importing ISO File: |==================  | (91/100)
+Importing ISO File: |==================  | (92/100)
+Importing ISO File: |==================  | (93/100)
+Importing ISO File: |==================  | (94/100)
+Importing ISO File: |=================== | (95/100)
+Importing ISO File: |=================== | (96/100)
+Importing ISO File: |=================== | (97/100)
+Importing ISO File: |=================== | (98/100)
+Importing ISO File: |=================== | (99/100)
+                                                          
+Saving D:\仙儿姐_x264.mp4: 0.500 secs Interleaving
+ISO File Writing: |                    | (01/100)
+ISO File Writing: |                    | (02/100)
+ISO File Writing: |                    | (03/100)
+ISO File Writing: |                    | (04/100)
+ISO File Writing: |=                   | (05/100)
+ISO File Writing: |=                   | (06/100)
+ISO File Writing: |=                   | (07/100)
+ISO File Writing: |=                   | (08/100)
+ISO File Writing: |=                   | (09/100)
+ISO File Writing: |==                  | (10/100)
+ISO File Writing: |==                  | (11/100)
+ISO File Writing: |==                  | (12/100)
+ISO File Writing: |==                  | (13/100)
+ISO File Writing: |==                  | (14/100)
+ISO File Writing: |===                 | (15/100)
+ISO File Writing: |===                 | (16/100)
+ISO File Writing: |===                 | (17/100)
+ISO File Writing: |===                 | (18/100)
+ISO File Writing: |===                 | (19/100)
+ISO File Writing: |====                | (20/100)
+ISO File Writing: |====                | (21/100)
+ISO File Writing: |====                | (22/100)
+ISO File Writing: |====                | (23/100)
+ISO File Writing: |====                | (24/100)
+ISO File Writing: |=====               | (25/100)
+ISO File Writing: |=====               | (26/100)
+ISO File Writing: |=====               | (27/100)
+ISO File Writing: |=====               | (28/100)
+ISO File Writing: |=====               | (29/100)
+ISO File Writing: |======              | (30/100)
+ISO File Writing: |======              | (31/100)
+ISO File Writing: |======              | (32/100)
+ISO File Writing: |======              | (33/100)
+ISO File Writing: |======              | (34/100)
+ISO File Writing: |=======             | (35/100)
+ISO File Writing: |=======             | (36/100)
+ISO File Writing: |=======             | (37/100)
+ISO File Writing: |=======             | (38/100)
+ISO File Writing: |=======             | (39/100)
+ISO File Writing: |========            | (40/100)
+ISO File Writing: |========            | (41/100)
+ISO File Writing: |========            | (42/100)
+ISO File Writing: |========            | (43/100)
+ISO File Writing: |========            | (44/100)
+ISO File Writing: |=========           | (45/100)
+ISO File Writing: |=========           | (46/100)
+ISO File Writing: |=========           | (47/100)
+ISO File Writing: |=========           | (48/100)
+ISO File Writing: |=========           | (49/100)
+ISO File Writing: |==========          | (50/100)
+ISO File Writing: |==========          | (51/100)
+ISO File Writing: |==========          | (52/100)
+ISO File Writing: |==========          | (53/100)
+ISO File Writing: |==========          | (54/100)
+ISO File Writing: |===========         | (55/100)
+ISO File Writing: |===========         | (56/100)
+ISO File Writing: |===========         | (57/100)
+ISO File Writing: |===========         | (58/100)
+ISO File Writing: |===========         | (59/100)
+ISO File Writing: |============        | (60/100)
+ISO File Writing: |============        | (61/100)
+ISO File Writing: |============        | (62/100)
+ISO File Writing: |============        | (63/100)
+ISO File Writing: |============        | (64/100)
+ISO File Writing: |=============       | (65/100)
+ISO File Writing: |=============       | (66/100)
+ISO File Writing: |=============       | (67/100)
+ISO File Writing: |=============       | (68/100)
+ISO File Writing: |=============       | (69/100)
+ISO File Writing: |==============      | (70/100)
+ISO File Writing: |==============      | (71/100)
+ISO File Writing: |==============      | (72/100)
+ISO File Writing: |==============      | (73/100)
+ISO File Writing: |==============      | (74/100)
+ISO File Writing: |===============     | (75/100)
+ISO File Writing: |===============     | (76/100)
+ISO File Writing: |===============     | (77/100)
+ISO File Writing: |===============     | (78/100)
+ISO File Writing: |===============     | (79/100)
+ISO File Writing: |================    | (80/100)
+ISO File Writing: |================    | (81/100)
+ISO File Writing: |================    | (82/100)
+ISO File Writing: |================    | (83/100)
+ISO File Writing: |================    | (84/100)
+ISO File Writing: |=================   | (85/100)
+ISO File Writing: |=================   | (86/100)
+ISO File Writing: |=================   | (87/100)
+ISO File Writing: |=================   | (88/100)
+ISO File Writing: |=================   | (89/100)
+ISO File Writing: |==================  | (90/100)
+ISO File Writing: |==================  | (91/100)
+ISO File Writing: |==================  | (92/100)
+ISO File Writing: |==================  | (93/100)
+ISO File Writing: |==================  | (94/100)
+ISO File Writing: |=================== | (95/100)
+ISO File Writing: |=================== | (96/100)
+ISO File Writing: |=================== | (97/100)
+ISO File Writing: |=================== | (98/100)
+ISO File Writing: |=================== | (99/100)
+                                                        
+D:\小丸工具箱v194\小丸工具箱rev194>del "D:\仙儿姐_vtemp.mp4" 
+D:\小丸工具箱v194\小丸工具箱rev194>del "D:\仙儿姐_atemp.mp4" 
+D:\小丸工具箱v194\小丸工具箱rev194>echo ===== one file is completed! ===== 
+===== one file is completed! =====
+
+
+===========2016/8/11 21:44:53===========
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\ffmpeg.exe" -i "D:\仙儿姐.mp4" -vn -sn -v 0 -c:a pcm_s16le -f wav pipe:|"D:\小丸工具箱v194\小丸工具箱rev194\tools\neroAacEnc.exe" -ignorelength -lc -br 96000 -if - -of "D:\仙儿姐_atemp.mp4"
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\x264_64-8bit.exe" --crf 23.5 --demuxer avs --threads auto --preset 8  -I 250 -r 4 -b 3 --me umh -i 1 --scenecut 60 -f 1:1 --qcomp 0.5 --psy-rd 0.3:0 --aq-mode 2 --aq-strength 0.8 --vf resize:480,360,,,,lanczos -o "D:\仙儿姐_vtemp.mp4" "D:\仙儿姐.mp4"
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\mp4box.exe" -add "D:\仙儿姐_vtemp.mp4#trackID=1:name=" -add "D:\仙儿姐_atemp.mp4#trackID=1:name=" -new "D:\仙儿姐_x264.mp4"
+
+del "D:\仙儿姐_vtemp.mp4"
+del "D:\仙儿姐_atemp.mp4"
+
+echo ===== one file is completed! =====
+
+
+===========2016/8/11 21:44:55===========
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\ffmpeg.exe" -i "D:\仙儿姐.mp4" -vn -sn -v 0 -c:a pcm_s16le -f wav pipe:  | "D:\小丸工具箱v194\小丸工具箱rev194\tools\neroAacEnc.exe" -ignorelength -lc -br 96000 -if - -of "D:\仙儿姐_atemp.mp4" 
+*************************************************************
+*                                                           *
+*  Nero AAC Encoder                                         *
+*  Copyright 2009 Nero AG                                   *
+*  All Rights Reserved Worldwide                            *
+*                                                           *
+*  Package build date: Feb 18 2010                          *
+*  Package version:    1.5.4.0                              *
+*                                                           *
+*  See -help for a complete list of available parameters.   *
+*                                                           *
+*************************************************************
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\x264_64-8bit.exe" --crf 23.5 --demuxer avs --threads auto --preset 8  -I 250 -r 4 -b 3 --me umh -i 1 --scenecut 60 -f 1:1 --qcomp 0.5 --psy-rd 0.3:0 --aq-mode 2 --aq-strength 0.8 --vf resize:480,360,,,,lanczos -o "D:\仙儿姐_vtemp.mp4" "D:\仙儿姐.mp4" 
+avs [error]: failed to load avisynth
+x264 [error]: could not open input file `D:\仙儿姐.mp4'
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\mp4box.exe" -add "D:\仙儿姐_vtemp.mp4#trackID=1:name=" -add "D:\仙儿姐_atemp.mp4#trackID=1:name=" -new "D:\仙儿姐_x264.mp4" 
+Several tracks in MP4 - please indicate track to import
+Error importing D:\仙儿姐_vtemp.mp4#trackID=1:name=: Bad Parameter
+D:\小丸工具箱v194\小丸工具箱rev194>del "D:\仙儿姐_vtemp.mp4" 
+D:\小丸工具箱v194\小丸工具箱rev194>del "D:\仙儿姐_atemp.mp4" 
+D:\小丸工具箱v194\小丸工具箱rev194>echo ===== one file is completed! ===== 
+===== one file is completed! =====
+
+

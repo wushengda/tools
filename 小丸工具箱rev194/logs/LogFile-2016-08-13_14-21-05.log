@@ -1,0 +1,81 @@
+===========2016/8/13 14:21:52===========
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\x264_64-8bit.exe" --crf 23.5 --demuxer auto --threads auto --preset 8  -I 250 -r 4 -b 3 --me umh -i 1 --scenecut 60 -f 1:1 --qcomp 0.5 --psy-rd 0.3:0 --aq-mode 2 --aq-strength 0.8 -o "D:\视频编辑\搞笑第一期\第一期搞笑合辑_x264.mp4" "D:\视频编辑\搞笑第一期\第一期搞笑合辑.mp4"
+
+echo ===== one file is completed! =====
+
+
+===========2016/8/13 14:26:41===========
+D:\小丸工具箱v194\小丸工具箱rev194>"D:\小丸工具箱v194\小丸工具箱rev194\tools\x264_64-8bit.exe" --crf 23.5 --demuxer auto --threads auto --preset 8  -I 250 -r 4 -b 3 --me umh -i 1 --scenecut 60 -f 1:1 --qcomp 0.5 --psy-rd 0.3:0 --aq-mode 2 --aq-strength 0.8 -o "D:\视频编辑\搞笑第一期\第一期搞笑合辑_x264.mp4" "D:\视频编辑\搞笑第一期\第一期搞笑合辑.mp4" 
+[info]: indexing input file [0.1%]  
+[info]: indexing input file [2.6%]  
+[info]: indexing input file [3.0%]  
+[info]: indexing input file [3.3%]  
+[info]: indexing input file [3.6%]  
+[info]: indexing input file [3.9%]  
+[info]: indexing input file [4.3%]  
+[info]: indexing input file [4.9%]  
+[info]: indexing input file [6.8%]  
+[info]: indexing input file [9.2%]  
+[info]: indexing input file [15.6%]  
+[info]: indexing input file [17.2%]  
+[info]: indexing input file [20.4%]  
+[info]: indexing input file [26.0%]  
+[info]: indexing input file [33.3%]  
+[info]: indexing input file [39.0%]  
+[info]: indexing input file [39.2%]  
+[info]: indexing input file [45.8%]  
+                                            
+ffms [info]: 
+ Format    : mov,mp4,m4a,3gp,3g2,mj2
+ Codec     : h264
+ PixFmt    : yuv420p
+ Framerate : 25/1
+ Timebase  : 1000/25000000
+ Duration  : 0:16:44
+ffms [info]: 720x576p 512:351 @ 25/1 fps (vfr)
+ffms [info]: color matrix: bt470bg
+x264 [info]: using SAR=512/351
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+x264 [info]: AVC Encoder x264 core 148 r2597+52 4ed4a81 xiaowan [8-bit@all X86_64]
+x264 [info]: profile: High, level: 3.0, subsampling: 4:2:0, bit-depth: 8-bit
+x264 [info]: cabac=1 ref=4 deblock=1:1:1 analyse=0x3:0x133 me=umh subme=10 psy=1 fade_compensate=0.00 psy_rd=0.30:0.00 mixed_ref=1 me_range=24 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 fgo=0 bframes=3 b_pyramid=2 b_adapt=2 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=1 scenecut=60 intra_refresh=0 rc_lookahead=60 rc=crf mbtree=1 crf=23.5000 qcomp=0.50 qpmin=0:0:0 qpmax=69:69:69 qpstep=4 ip_ratio=1.40 aq=2:0.80 aq-sensitivity=10.00 aq-factor=1.00:1.00:1.00 aq2=0 aq3=0
+x264 [info]: started at Sat Aug 13 14:22:02 2016
+                                                                                                                       
+x264 [info]: frame I:225   Avg QP:19.58  size: 16054
+x264 [info]: frame P:7588  Avg QP:24.74  size:  4755
+x264 [info]: frame B:17297 Avg QP:29.30  size:   905
+x264 [info]: consecutive B-frames:  4.7%  5.5% 14.2% 75.5%
+x264 [info]: mb I  I16..4: 51.4% 33.8% 14.8%
+x264 [info]: mb P  I16..4:  2.5%  3.9%  1.2%  P16..4: 12.2%  4.8%  3.2%  0.5%  0.1%    skip:71.7%
+x264 [info]: mb B  I16..4:  0.3%  0.3%  0.1%  B16..8: 10.8%  2.5%  0.5%  direct: 0.5%  skip:84.8%  L0:38.5% L1:49.9% BI:11.6%
+x264 [info]: 8x8 transform intra:45.9% inter:57.2%
+x264 [info]: direct mvs  spatial:99.5% temporal:0.5%
+x264 [info]: coded y,uvDC,uvAC intra: 38.7% 37.0% 10.5% inter: 4.2% 2.7% 0.2%
+x264 [info]: i16 v,h,dc,p: 47% 29%  6% 18%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 26% 14% 20%  5%  6%  9%  6%  8%  7%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 31% 18% 11%  5%  7%  8%  6%  7%  7%
+x264 [info]: i8c dc,h,v,p: 44% 24% 20% 12%
+x264 [info]: Weighted P-Frames: Y:97.7% UV:2.0%
+x264 [info]: ref P L0: 65.5% 15.9% 12.7%  4.8%  1.2%  0.1%
+x264 [info]: ref B L0: 92.5%  5.9%  1.7%
+x264 [info]: ref B L1: 96.5%  3.5%
+x264 [info]: kb/s:440.79
+                                                        
+encoded 25110 frames, 89.93 fps, 440.79 kb/s, 52.78 MB
+x264 [info]: ended at Sat Aug 13 14:26:41 2016
+x264 [info]: encoding duration 0:04:39
+D:\小丸工具箱v194\小丸工具箱rev194>echo ===== one file is completed! ===== 
+===== one file is completed! =====
+
+
+===========2016/8/13 14:27:45===========
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\ffmpeg.exe" -i "D:\视频编辑\搞笑第一期\第一期搞笑合辑.mp4" -vn -sn -v 0 -c:a pcm_s16le -f wav pipe:|"D:\小丸工具箱v194\小丸工具箱rev194\tools\neroAacEnc.exe" -ignorelength -lc -br 128000 -if - -of "D:\视频编辑\搞笑第一期\第一期搞笑合辑_atemp.mp4"
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\x264_64-8bit.exe" --crf 23.5 --demuxer auto --threads auto --preset 8  -I 250 -r 4 -b 3 --me umh -i 1 --scenecut 60 -f 1:1 --qcomp 0.5 --psy-rd 0.3:0 --aq-mode 2 --aq-strength 0.8 -o "D:\视频编辑\搞笑第一期\第一期搞笑合辑_vtemp.mp4" "D:\视频编辑\搞笑第一期\第一期搞笑合辑.mp4"
+"D:\小丸工具箱v194\小丸工具箱rev194\tools\mp4box.exe" -add "D:\视频编辑\搞笑第一期\第一期搞笑合辑_vtemp.mp4#trackID=1:name=" -add "D:\视频编辑\搞笑第一期\第一期搞笑合辑_atemp.mp4#trackID=1:name=" -new "D:\视频编辑\搞笑第一期\第一期搞笑合辑_x264.mp4"
+
+del "D:\视频编辑\搞笑第一期\第一期搞笑合辑_vtemp.mp4"
+del "D:\视频编辑\搞笑第一期\第一期搞笑合辑_atemp.mp4"
+
+echo ===== one file is completed! =====
+
+

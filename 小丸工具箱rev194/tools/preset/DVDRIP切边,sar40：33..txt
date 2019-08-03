@@ -1,0 +1,1 @@
+-p1 --crf 20 --aq-mode 2 --sar 40:33 --vf yadif:,/crop:8,0,8,0 --stat "TEMP.stat" --slow-firstpass --ref 8 --preset 8 --subme 10
