@@ -1,1 +1,0 @@
---preset 8 --subme 10 --aq-mode 2 --aq-strength 0.935 --ref 8 --preset 8 --deblock 1:1
